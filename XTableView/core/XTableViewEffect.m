@@ -1,4 +1,4 @@
-#import "XTableViewEffect.h"
+#import "XTableView.h"
 
 @implementation XTableViewEffect
 

@@ -1,4 +1,4 @@
-#import "XTableViewCell.h"
+#import "XTableView.h"
 
 @implementation XTableViewCell
 
@@ -16,11 +16,11 @@
 }
 
 -(CGFloat)getCellHeight{
-    return -1;
+    return self.frame.size.height;
 }
 
 -(void)callEvent:(NSString *)key{
-     
+    [self.xTableView callEvent:key data:self.cellData];
 }
 
 @end
