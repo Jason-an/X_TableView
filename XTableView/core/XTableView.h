@@ -3,7 +3,7 @@
 
 @interface XTableView : UITableView
 
-//dataSource and delegateare has been removed
+//dataSource and delegate are disabled
 @property(nonatomic,weak)id<XTableViewDataSource> xDataSource;
 
 
