@@ -9,17 +9,31 @@
 #import "MainViewController.h"
 #import "XTableView.h"
 
+NSMutableDictionary* AA(NSDictionary *dic){
+    return [[NSMutableDictionary alloc]initWithDictionary:dic];
+}
+
 @implementation MainViewController
 
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.title=@"demo";
     
+    
+    
     XTableView *tbv = [[XTableView alloc]initWithFrame:CGRectZero];
-    tbv.xDataSource = @[@{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"a"},
-                        @{@"__tag__":@"basic",@"text":@"world",@"onClick":@"b"},
-                        @{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"c"},
-                        @{@"__tag__":@"basic",@"text":@"world",@"onClick":@"d"},
+    tbv.xDataSource = @[
+        AA(@{@"__tag__":@"switch",@"text":@"switch test",@"select":@"true",@"onClick":@"d"}),
+        AA(@{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"a"}),
+        AA(@{@"__tag__":@"basic",@"text":@"world",@"onClick":@"b"}),
+        AA(@{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"c"}),
+        AA(@{@"__tag__":@"basic",@"text":@"world",@"onClick":@"d"}),
+        
+        AA(@{@"__tag__":@"switch",@"text":@"switch test",@"select":@"false",@"onClick":@"d"}),
+        AA(@{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"a"}),
+        AA(@{@"__tag__":@"basic",@"text":@"world",@"onClick":@"b"}),
+        AA(@{@"__tag__":@"basic",@"text":@"hello",@"onClick":@"c"}),
+        AA(@{@"__tag__":@"basic",@"text":@"world",@"onClick":@"d"}),
                         ];
     
     [tbv addEventListener:@"a" block:^(NSMutableDictionary *cellData) {

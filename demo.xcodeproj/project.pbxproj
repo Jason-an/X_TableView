@@ -19,6 +19,8 @@
 		A01541111AE8E7AB00421238 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A015410A1AE8E7AB00421238 /* MainViewController.m */; };
 		A01541141AE8E84E00421238 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A01541121AE8E84E00421238 /* BasicCell.m */; };
 		A01541151AE8E84E00421238 /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01541131AE8E84E00421238 /* BasicCell.xib */; };
+		A053C2DE1AE9012200266741 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A053C2DC1AE9012200266741 /* SwitchCell.m */; };
+		A053C2DF1AE9012200266741 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A053C2DD1AE9012200266741 /* SwitchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		A015410A1AE8E7AB00421238 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		A01541121AE8E84E00421238 /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
 		A01541131AE8E84E00421238 /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
+		A053C2DC1AE9012200266741 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		A053C2DD1AE9012200266741 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
 		E11C833A1AE4B4E700C023B9 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 		A01540FF1AE8E7AB00421238 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				A053C2DC1AE9012200266741 /* SwitchCell.m */,
+				A053C2DD1AE9012200266741 /* SwitchCell.xib */,
 				A01541121AE8E84E00421238 /* BasicCell.m */,
 				A01541131AE8E84E00421238 /* BasicCell.xib */,
 				A01541001AE8E7AB00421238 /* AppDelegate.h */,
@@ -176,6 +182,7 @@
 				A01541151AE8E84E00421238 /* BasicCell.xib in Resources */,
 				A015410C1AE8E7AB00421238 /* LaunchScreen.xib in Resources */,
 				A015410F1AE8E7AB00421238 /* Info.plist in Resources */,
+				A053C2DF1AE9012200266741 /* SwitchCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 				A01540F81AE8E46900421238 /* XTableView.m in Sources */,
 				A01541101AE8E7AB00421238 /* main.m in Sources */,
 				A01541141AE8E84E00421238 /* BasicCell.m in Sources */,
+				A053C2DE1AE9012200266741 /* SwitchCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
