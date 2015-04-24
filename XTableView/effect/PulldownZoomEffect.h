@@ -1,5 +1,5 @@
 #import "XTableView.h"
 
-@interface PulldownZoomEffect : XTableViewEffect
+@interface PulldownZoomEffect : NSObject<XTableViewEffect>
 
 @end

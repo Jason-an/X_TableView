@@ -14,12 +14,26 @@
 
 @implementation XTableView
 
--(id)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self init2];
-    }
-    return self;
+-(void)errorTips{
+    NSAssert(0,@"\n\n[XTableView] dataSource and delegate are disabled\n\n");
+}
+
+-(id <UITableViewDataSource>)getDataSource{
+    [self errorTips];
+    return nil;
+}
+
+-(void)setDataSource:(id <UITableViewDataSource>)dataSource{
+     [self errorTips];
+}
+
+-(id <UITableViewDelegate>)getDelegate{
+    [self errorTips];
+    return nil;
+}
+
+-(void)setDelegate:(id <UITableViewDelegate>)delegate{
+    [self errorTips];
 }
 
 -(id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
@@ -33,8 +47,9 @@
 -(void)init2{
     _blockDic = [[NSMutableDictionary alloc]init];
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.dataSource = self;
-    self.delegate = self;
+    
+    [super setDataSource:self];
+    [super setDelegate:self];
 }
 
 -(void)addEventListerWithName:(enum XTableViewEvent)name block:(void(^)())block{
@@ -57,7 +72,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _xDataSource.count;
+    return [_xDataSource getCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
