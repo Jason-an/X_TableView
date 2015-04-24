@@ -1,21 +1,15 @@
-# XTableView
+# X_TableView
 
 ```objective-c
--(void)viewDidLoad{
-    [super viewDidLoad];
-    self.title=@"demo";
+X_TableView *tbv = [[X_TableView alloc]init];
+    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"test.xml"];
     
-    XTableView *tbv = [[XTableView alloc]init];
-    tbv.xDataSource = [XMLDataSource xmlDataSourceWithFileName:@"test.xml"];
-    
+    __weak MainViewController *weakSelf = self;
     [tbv addEventListener:@"f1" block:^(NSMutableDictionary *cellData) {
-        NSLog(@"f1");
+        [weakSelf.navigationController pushViewController:[[PulldownZoomViewController alloc]init] animated:YES];
     }];
     
     [tbv addEventListener:@"f2" block:^(NSMutableDictionary *cellData) {
-        NSLog(@"f2");
+        NSLog(@"test");
     }];
-    
-    self.view = tbv;
-}
 ```
