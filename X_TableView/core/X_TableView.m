@@ -48,7 +48,7 @@
     [super setDelegate:self];
 }
 
--(void)addEventListerWithName:(enum XTableViewEvent)name block:(void(^)())block{
+-(void)addEventListerWithName:(enum X_TableViewEvent)name block:(void(^)())block{
     [_eventArr[name]addObject:block];
 }
 
@@ -158,7 +158,7 @@
 
 
 
--(void)eventCall:(enum XTableViewEvent)name{
+-(void)eventCall:(enum X_TableViewEvent)name{
     NSMutableArray *arr = _eventArr[name];
     for (void(^block)() in arr) {
         block();

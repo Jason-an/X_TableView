@@ -5,9 +5,6 @@
 
 #import "PulldownZoomViewController.h"
 
-@end
-
-
 @implementation MainViewController
 
 -(void)viewDidLoad{

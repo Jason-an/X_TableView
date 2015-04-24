@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 
 
-typedef NS_ENUM(NSInteger, XTableViewEvent) {
+typedef NS_ENUM(NSInteger, X_TableViewEvent) {
     XTableViewDidScroll,
     XTableViewWillReloadData,
     XTableViewDidReloadData,
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, XTableViewEvent) {
 
 -(void)callEvent:(NSString *)key data:(NSMutableDictionary*)data;
 -(void)addEventListener:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block;
--(void)addEventListerWithName:(enum XTableViewEvent)name block:(void(^)())block;
+-(void)addEventListerWithName:(enum X_TableViewEvent)name block:(void(^)())block;
 
 -(void)addEffect:(id<X_TableViewEffect>)effect;
 -(void)removeEffect:(id<X_TableViewEffect>)effect;
