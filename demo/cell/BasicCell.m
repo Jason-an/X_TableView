@@ -1,7 +1,7 @@
 
-#import "XTableView.h"
+#import "X_TableView.h"
 
-@interface BasicCell : XTableViewCell
+@interface BasicCell : X_TableViewCell
 @end
 
 @implementation BasicCell

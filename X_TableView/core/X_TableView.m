@@ -1,6 +1,6 @@
-#import "XTableView.h"
+#import "X_TableView.h"
 
-@interface XTableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
+@interface X_TableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
     NSMutableArray* _eventArr[10];
 }
 @property(nonatomic)NSMutableDictionary* blockDic;
@@ -9,7 +9,7 @@
 
 
 
-@implementation XTableView
+@implementation X_TableView
 
 -(id <UITableViewDataSource>)getDataSource{
     return nil;
@@ -53,11 +53,11 @@
 }
 
 
--(void)addEffect:(id<XTableViewEffect>)effect{
+-(void)addEffect:(id<X_TableViewEffect>)effect{
     [effect onEffectAdd:self];
     _effectDic[[NSString stringWithFormat:@"%p",effect]]=effect;
 }
--(void)removeEffect:(id<XTableViewEffect>)effect{
+-(void)removeEffect:(id<X_TableViewEffect>)effect{
     [effect onEffectRemove:self];
     [_effectDic removeObjectForKey:[NSString stringWithFormat:@"%p",effect]];
 }
@@ -99,10 +99,10 @@
 }
 
 
-- (XTableViewCell*)getCellWithTableView:(UITableView*)tbv tagName:(NSString*)tagName cellData:(NSMutableDictionary*)dic{
+- (X_TableViewCell*)getCellWithTableView:(UITableView*)tbv tagName:(NSString*)tagName cellData:(NSMutableDictionary*)dic{
     
     NSString* cellName = [NSString stringWithFormat:@"%@Cell",[tagName capitalizedString]];
-    XTableViewCell* cell = [tbv dequeueReusableCellWithIdentifier:cellName];
+    X_TableViewCell* cell = [tbv dequeueReusableCellWithIdentifier:cellName];
     if(!cell){
         cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
         [cell initialize];
@@ -125,7 +125,7 @@
         cellDic = [[NSMutableDictionary alloc]init];
     }
     
-    XTableViewCell* cell = cellDic[cellName];
+    X_TableViewCell* cell = cellDic[cellName];
     if (cell==nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
         [cell initialize];
@@ -147,7 +147,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    XTableViewCell* cell = (XTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+    X_TableViewCell* cell = (X_TableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     [cell didSelect];
 }
 

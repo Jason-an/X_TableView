@@ -1,21 +1,21 @@
-#import "PulldownZoomEffect.h"
-#import "XTableView.h"
+#import "X_PulldownZoomEffect.h"
+#import "X_TableView.h"
 
-@interface PulldownZoomEffect()
+@interface X_PulldownZoomEffect()
 @property(nonatomic)CGPoint offset;
 @end
 
-@implementation PulldownZoomEffect
+@implementation X_PulldownZoomEffect
 
 
--(void)onEffectAdd:(XTableView *)xTableView{
-    __weak XTableView* weakTb = xTableView;
+-(void)onEffectAdd:(X_TableView *)xTableView{
+    __weak X_TableView* weakTb = xTableView;
     //__weak PulldownZoomEffect* weakSelf = self;
     
     [weakTb addEventListerWithName:XTableViewDidScroll block:^{
         CGFloat y = weakTb.contentOffset.y + weakTb.contentInset.top;//
         if (y<0) {
-            XTableViewCell *cell = (XTableViewCell*)[weakTb cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            X_TableViewCell *cell = (X_TableViewCell*)[weakTb cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             
             if (cell!=nil) {
                 
@@ -38,7 +38,7 @@
     }];*/
 }
 
--(void)onEffectRemove:(XTableView *)xTableView{
+-(void)onEffectRemove:(X_TableView *)xTableView{
     
 }
 

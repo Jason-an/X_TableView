@@ -1,7 +1,7 @@
 #import "PulldownZoomViewController.h"
-#import "XTableView.h"
-#import "XMLDataSource.h"
-#import "PulldownZoomEffect.h"
+#import "X_TableView.h"
+#import "X_XMLDataSource.h"
+#import "X_PulldownZoomEffect.h"
 
 @implementation PulldownZoomViewController
 
@@ -9,9 +9,9 @@
     [super viewDidLoad];
     self.title=@"pulldown zoom";
     
-    XTableView *tbv = [[XTableView alloc]init];
-    tbv.xDataSource = [XMLDataSource xmlDataSourceWithFileName:@"PulldownZoomViewController.xml"];
-    [tbv addEffect:[[PulldownZoomEffect alloc]init]];
+    X_TableView *tbv = [[X_TableView alloc]init];
+    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"PulldownZoomViewController.xml"];
+    [tbv addEffect:[[X_PulldownZoomEffect alloc]init]];
     
     self.view = tbv;
 }

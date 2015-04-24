@@ -1,6 +1,6 @@
-#import "XTableView.h"
+#import "X_TableView.h"
 
-@implementation XTableViewCell
+@implementation X_TableViewCell
 
 
 -(void)initialize{

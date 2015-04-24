@@ -1,6 +1,6 @@
-#import "XTableView.h"
+#import "X_TableView.h"
 
-@interface SwitchCell : XTableViewCell
+@interface SwitchCell : X_TableViewCell
 @end
 
 

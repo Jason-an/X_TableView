@@ -1,6 +1,6 @@
-#import "ArrayDataSource.h"
+#import "X_ArrayDataSource.h"
 
-@implementation ArrayDataSource
+@implementation X_ArrayDataSource
 
 -(NSUInteger)getCount{
     return 0;

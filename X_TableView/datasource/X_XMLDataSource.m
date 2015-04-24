@@ -1,11 +1,11 @@
-#import "XMLDataSource.h"
+#import "X_XMLDataSource.h"
 
-@interface XMLDataSource()<NSXMLParserDelegate>{
+@interface X_XMLDataSource()<NSXMLParserDelegate>{
     NSMutableArray *arr;
 }
 @end
 
-@implementation XMLDataSource
+@implementation X_XMLDataSource
 
 -(NSString*)readRes:(NSString*)filename{
     return [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:filename ofType:nil] encoding:NSUTF8StringEncoding error:nil];
@@ -45,8 +45,8 @@
 }
 
 
-+ (XMLDataSource *)xmlDataSourceWithFileName:(NSString*)filename{
-    XMLDataSource *d = [[XMLDataSource alloc]init];
++ (X_XMLDataSource *)xmlDataSourceWithFileName:(NSString*)filename{
+    X_XMLDataSource *d = [[X_XMLDataSource alloc]init];
     [d loadXML:filename];
     return d;
 }
