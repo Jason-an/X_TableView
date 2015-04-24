@@ -1,0 +1,11 @@
+<table>
+    
+    
+    <basic text="111111"/>
+    <basic text="222222"/>
+    <basic text="333333"/>
+    
+    <switch text="1" select="true" />
+    <switch text="2" select="true" />
+    
+</table>

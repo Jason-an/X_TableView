@@ -8,7 +8,11 @@ typedef NS_ENUM(NSInteger, XTableViewEvent) {
     XTableViewDidReloadData,
 };
 
+@class XTableView;
+
 @protocol XTableViewEffect<NSObject>
+-(void)onEffectAdd:(XTableView *)xTableView;
+-(void)onEffectRemove:(XTableView *)xTableView;
 @end
 
 @protocol XTableViewDataSource <NSObject>
@@ -25,6 +29,9 @@ typedef NS_ENUM(NSInteger, XTableViewEvent) {
 -(void)callEvent:(NSString *)key data:(NSMutableDictionary*)data;
 -(void)addEventListener:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block;
 -(void)addEventListerWithName:(enum XTableViewEvent)name block:(void(^)())block;
+
+-(void)addEffect:(id<XTableViewEffect>)effect;
+-(void)removeEffect:(id<XTableViewEffect>)effect;
 @end
 
 

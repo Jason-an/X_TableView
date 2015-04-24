@@ -10,6 +10,8 @@
 	<string>demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>E7372032FA15271D21B5D1F82580B1D05F09187C</key>
+		<string>https://github.com/fc01/XTableView.git</string>
 		<key>EC9A6FEEF04CA8125E4B6E08C9F7BF6E4393A30F</key>
 		<string>https://github.com/fc01/TSNotificationCenter.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EC9A6FEEF04CA8125E4B6E08C9F7BF6E4393A30F</key>
+		<key>E7372032FA15271D21B5D1F82580B1D05F09187C</key>
 		<string>../..</string>
+		<key>EC9A6FEEF04CA8125E4B6E08C9F7BF6E4393A30F</key>
+		<string>../../../TSNotificationCenter</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/fc01/TSNotificationCenter.git</string>
+	<string>https://github.com/fc01/XTableView.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EC9A6FEEF04CA8125E4B6E08C9F7BF6E4393A30F</string>
+	<string>E7372032FA15271D21B5D1F82580B1D05F09187C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>EC9A6FEEF04CA8125E4B6E08C9F7BF6E4393A30F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TSNotificationCenter</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7372032FA15271D21B5D1F82580B1D05F09187C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XTableView</string>
 		</dict>
 	</array>
 </dict>

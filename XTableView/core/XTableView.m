@@ -1,39 +1,28 @@
 #import "XTableView.h"
 
-@interface XTableView()<UITableViewDataSource,UITableViewDelegate/*,UIScrollViewDelegate*/>
-
+@interface XTableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
+    NSMutableArray* _eventArr[10];
+}
 @property(nonatomic)NSMutableDictionary* blockDic;
-@property(nonatomic)bool isClear;
-@property(nonatomic)NSMutableArray* didScrollArr;
-@property(nonatomic)NSMutableArray* didScrollStartArr;
-@property(nonatomic)NSMutableArray* didScrollEndArr;
-@property(nonatomic)NSMutableArray* didTouchUpArr;
+@property(nonatomic)NSMutableDictionary* effectDic;
 @end
 
 
 
 @implementation XTableView
 
--(void)errorTips{
-    NSAssert(0,@"\n\n[XTableView] dataSource and delegate are disabled\n\n");
-}
-
 -(id <UITableViewDataSource>)getDataSource{
-    [self errorTips];
     return nil;
 }
 
 -(void)setDataSource:(id <UITableViewDataSource>)dataSource{
-     [self errorTips];
 }
 
 -(id <UITableViewDelegate>)getDelegate{
-    [self errorTips];
     return nil;
 }
 
 -(void)setDelegate:(id <UITableViewDelegate>)delegate{
-    [self errorTips];
 }
 
 -(id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
@@ -45,7 +34,14 @@
 }
 
 -(void)init2{
+    
+    for (int i=0; i<10; i++) {
+        _eventArr[i]=[[NSMutableArray alloc]init];
+    }
+    
     _blockDic = [[NSMutableDictionary alloc]init];
+    _effectDic = [[NSMutableDictionary alloc]init];
+
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [super setDataSource:self];
@@ -53,8 +49,19 @@
 }
 
 -(void)addEventListerWithName:(enum XTableViewEvent)name block:(void(^)())block{
-    
+    [_eventArr[name]addObject:block];
 }
+
+
+-(void)addEffect:(id<XTableViewEffect>)effect{
+    [effect onEffectAdd:self];
+    _effectDic[[NSString stringWithFormat:@"%p",effect]]=effect;
+}
+-(void)removeEffect:(id<XTableViewEffect>)effect{
+    [effect onEffectRemove:self];
+    [_effectDic removeObjectForKey:[NSString stringWithFormat:@"%p",effect]];
+}
+
 
 -(void)addEventListener:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block{
     _blockDic[name]=block;
@@ -143,6 +150,46 @@
     XTableViewCell* cell = (XTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     [cell didSelect];
 }
+
+
+
+
+
+
+
+
+-(void)eventCall:(enum XTableViewEvent)name{
+    NSMutableArray *arr = _eventArr[name];
+    for (void(^block)() in arr) {
+        block();
+    }
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self eventCall:XTableViewDidScroll];
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+    //didScrollStart
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    //didScrollEnd
+}
+
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerat{
+    //didTouchUp
+}
+
+-(void)reloadData{
+    [self eventCall:XTableViewWillReloadData];
+    [super reloadData];
+    [self eventCall:XTableViewDidReloadData];
+}
+
+
 
 @end
 

@@ -15,6 +15,8 @@
 		A015410F1AE8E7AB00421238 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A01541071AE8E7AB00421238 /* Info.plist */; };
 		A01541101AE8E7AB00421238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01541081AE8E7AB00421238 /* main.m */; };
 		A01541111AE8E7AB00421238 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A015410A1AE8E7AB00421238 /* MainViewController.m */; };
+		A03C29901AEA0FB3002E5A24 /* PulldownZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03C298F1AEA0FB3002E5A24 /* PulldownZoomViewController.m */; };
+		A03C29931AEA0FEC002E5A24 /* PulldownZoomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A03C29921AEA0FEC002E5A24 /* PulldownZoomViewController.xml */; };
 		A0FE7E411AE9ED9100C6A2D4 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE7E3D1AE9ED9100C6A2D4 /* BasicCell.m */; };
 		A0FE7E421AE9ED9100C6A2D4 /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FE7E3E1AE9ED9100C6A2D4 /* BasicCell.xib */; };
 		A0FE7E431AE9ED9100C6A2D4 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FE7E3F1AE9ED9100C6A2D4 /* SwitchCell.m */; };
@@ -38,6 +40,9 @@
 		A01541081AE8E7AB00421238 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A01541091AE8E7AB00421238 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A015410A1AE8E7AB00421238 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A03C298F1AEA0FB3002E5A24 /* PulldownZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownZoomViewController.m; sourceTree = "<group>"; };
+		A03C29911AEA0FEC002E5A24 /* PulldownZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownZoomViewController.h; sourceTree = "<group>"; };
+		A03C29921AEA0FEC002E5A24 /* PulldownZoomViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PulldownZoomViewController.xml; sourceTree = "<group>"; };
 		A0FE7E3D1AE9ED9100C6A2D4 /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
 		A0FE7E3E1AE9ED9100C6A2D4 /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 		A0FE7E3F1AE9ED9100C6A2D4 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FE7E3C1AE9ED9100C6A2D4 /* cell */,
+				A03C298D1AEA0F8C002E5A24 /* viewController */,
 				A01541001AE8E7AB00421238 /* AppDelegate.h */,
 				A01541011AE8E7AB00421238 /* AppDelegate.m */,
 				A01541021AE8E7AB00421238 /* LaunchScreen.xib */,
@@ -106,6 +112,16 @@
 				A0FE7E4E1AE9F2D600C6A2D4 /* test.xml */,
 			);
 			path = demo;
+			sourceTree = "<group>";
+		};
+		A03C298D1AEA0F8C002E5A24 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				A03C29911AEA0FEC002E5A24 /* PulldownZoomViewController.h */,
+				A03C298F1AEA0FB3002E5A24 /* PulldownZoomViewController.m */,
+				A03C29921AEA0FEC002E5A24 /* PulldownZoomViewController.xml */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		A0FE7E3C1AE9ED9100C6A2D4 /* cell */ = {
@@ -208,6 +224,7 @@
 				A015410C1AE8E7AB00421238 /* LaunchScreen.xib in Resources */,
 				A015410F1AE8E7AB00421238 /* Info.plist in Resources */,
 				A0FE7E4F1AE9F2DB00C6A2D4 /* test.xml in Resources */,
+				A03C29931AEA0FEC002E5A24 /* PulldownZoomViewController.xml in Resources */,
 				A0FE7E421AE9ED9100C6A2D4 /* BasicCell.xib in Resources */,
 				A0FE7E441AE9ED9100C6A2D4 /* SwitchCell.xib in Resources */,
 			);
@@ -226,6 +243,7 @@
 				A015410B1AE8E7AB00421238 /* AppDelegate.m in Sources */,
 				A0FE7E431AE9ED9100C6A2D4 /* SwitchCell.m in Sources */,
 				A01541111AE8E7AB00421238 /* MainViewController.m in Sources */,
+				A03C29901AEA0FB3002E5A24 /* PulldownZoomViewController.m in Sources */,
 				A01540FB1AE8E46900421238 /* PulldownZoomEffect.m in Sources */,
 				A01540F81AE8E46900421238 /* XTableView.m in Sources */,
 				A0FE7E461AE9EF7B00C6A2D4 /* XTableViewCell.m in Sources */,
