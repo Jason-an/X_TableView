@@ -1,10 +1,9 @@
 #import "X_TableView.h"
 
-@interface X_TableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
-    NSMutableArray* _eventArr[10];
-}
-@property(nonatomic)NSMutableDictionary* blockDic;
-@property(nonatomic)NSMutableDictionary* effectDic;
+@interface X_TableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
+@property(nonatomic)NSMutableDictionary* eventDic; // key --> string | value --> array{name:string,block:void(^)()}
+@property(nonatomic)NSMutableDictionary* blockDic; // key --> string | value --> void (^)(NSMutableDictionary* cellData)
+@property(nonatomic)NSMutableDictionary* effectDic;// key --> string | value --> id<X_TableViewEffect>
 @end
 
 
@@ -35,10 +34,7 @@
 
 -(void)init2{
     
-    for (int i=0; i<10; i++) {
-        _eventArr[i]=[[NSMutableArray alloc]init];
-    }
-    
+    _eventDic = [[NSMutableDictionary alloc]init];
     _blockDic = [[NSMutableDictionary alloc]init];
     _effectDic = [[NSMutableDictionary alloc]init];
 
@@ -48,31 +44,47 @@
     [super setDelegate:self];
 }
 
--(void)addEventListerWithName:(enum X_TableViewEvent)name block:(void(^)())block{
-    [_eventArr[name]addObject:block];
+-(void)addTableEventListenerWithId:(id)Id name:(enum X_TableViewEvent)name block:(void(^)())block{
+    NSString *key = [NSString stringWithFormat:@"%p",Id];
+    if (_eventDic[key]==nil) {
+        _eventDic[key]=[[NSMutableArray alloc]init];
+    }
+    NSMutableArray *arr = _eventDic[key];
+    [arr addObject:@{@"name":[NSNumber numberWithInteger:name],@"block":block}];
+}
+
+-(void)removeTableEventWithId:(id)Id{
+    NSString *key = [NSString stringWithFormat:@"%p",Id];
+    [_eventDic removeObjectForKey:key];
 }
 
 
 -(void)addEffect:(id<X_TableViewEffect>)effect{
+    NSString *key = [NSString stringWithFormat:@"%p",effect];
     [effect onEffectAdd:self];
-    _effectDic[[NSString stringWithFormat:@"%p",effect]]=effect;
+    _effectDic[key]=effect;
 }
 -(void)removeEffect:(id<X_TableViewEffect>)effect{
+    NSString *key = [NSString stringWithFormat:@"%p",effect];
     [effect onEffectRemove:self];
-    [_effectDic removeObjectForKey:[NSString stringWithFormat:@"%p",effect]];
+    [_effectDic removeObjectForKey:key];
 }
 
 
--(void)addEventListener:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block{
+-(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block{
     _blockDic[name]=block;
 }
 
--(void)callEvent:(NSString *)key data:(NSMutableDictionary*)data{
-    void(^callBack)(id)=self.blockDic[key];
+-(void)dispatchCellEventWithName:(NSString *)name data:(NSMutableDictionary*)data{
+    void(^callBack)(id)=_blockDic[name];
     
     if (callBack!=nil) {
         callBack(data);
     }
+}
+
+-(void)removeAllCellEvent{
+    [_blockDic removeAllObjects];
 }
 
 
@@ -152,16 +164,13 @@
 }
 
 
-
-
-
-
-
-
 -(void)eventCall:(enum X_TableViewEvent)name{
-    NSMutableArray *arr = _eventArr[name];
-    for (void(^block)() in arr) {
-        block();
+    for (NSString *key in _eventDic) {
+        for (NSDictionary *dic in _eventDic[key]) {
+            if ([dic[@"name"] integerValue]==name) {
+                ((void(^)())dic[@"block"])();
+            }
+        }
     }
 }
 

@@ -5,6 +5,19 @@
 
 #import "PulldownZoomViewController.h"
 
+
+
+void showAlter(NSString *title)
+{
+    UIAlertView *baseAlert = [[UIAlertView alloc]
+                              initWithTitle:title
+                              message:@"" delegate:nil
+                              cancelButtonTitle:@"ok" otherButtonTitles:nil];
+    [baseAlert show];
+    
+}
+
+
 @implementation MainViewController
 
 -(void)viewDidLoad{
@@ -15,12 +28,12 @@
     tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"test.xml"];
     
     __weak MainViewController *weakSelf = self;
-    [tbv addEventListener:@"f1" block:^(NSMutableDictionary *cellData) {
+    [tbv addCellEventListenerWithName:@"f1" block:^(NSMutableDictionary *cellData) {
         [weakSelf.navigationController pushViewController:[[PulldownZoomViewController alloc]init] animated:YES];
     }];
     
-    [tbv addEventListener:@"f2" block:^(NSMutableDictionary *cellData) {
-        NSLog(@"test");
+    [tbv addCellEventListenerWithName:@"f2" block:^(NSMutableDictionary *cellData) {
+        showAlter(@"test");
     }];
     
     

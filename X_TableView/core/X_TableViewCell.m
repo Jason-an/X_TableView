@@ -19,8 +19,8 @@
     return self.frame.size.height;
 }
 
--(void)callEvent:(NSString *)key{
-    [self.xTableView callEvent:key data:self.cellData];
+-(void)dispatchCellEventWithName:(NSString *)name{
+    [self.xTableView dispatchCellEventWithName:name data:self.cellData];
 }
 
 @end

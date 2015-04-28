@@ -12,7 +12,7 @@
     __weak X_TableView* weakTb = xTableView;
     //__weak PulldownZoomEffect* weakSelf = self;
     
-    [weakTb addEventListerWithName:XTableViewDidScroll block:^{
+    [weakTb addTableEventListenerWithId:self name:XTableViewDidScroll block:^{
         CGFloat y = weakTb.contentOffset.y + weakTb.contentInset.top;//
         if (y<0) {
             X_TableViewCell *cell = (X_TableViewCell*)[weakTb cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
@@ -27,12 +27,12 @@
         }
     }];
     /*
-    [weakTb addEventListerWithName:XTableViewWillReloadData block:^{
+    [weakTb addTableEventListenerWithId:self name:XTableViewWillReloadData block:^{
         weakSelf.offset = weakTb.contentOffset;
     }];
     
     
-    [weakTb addEventListerWithName:XTableViewDidReloadData block:^{
+    [weakTb addTableEventListenerWithId:self name:XTableViewDidReloadData block:^{
         weakTb.contentOffset = weakSelf.offset;
         aaa();
     }];*/

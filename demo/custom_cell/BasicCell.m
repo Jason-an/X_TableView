@@ -11,7 +11,7 @@
 }
 
 -(void)didSelect{
-    [super callEvent:self.cellData[@"onClick"]];
+    [super dispatchCellEventWithName:self.cellData[@"onClick"]];
 }
 
 @end

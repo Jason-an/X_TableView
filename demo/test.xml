@@ -1,7 +1,8 @@
 <table>
     
-    
     <basic text="pulldown zoom" onClick = "f1"/>
+    <line/>
     <basic text="test" onClick = "f2"/>
-
+    <line/>
+    
 </table>
