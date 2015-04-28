@@ -1,0 +1,13 @@
+<table>
+    
+    <basic   text = "hello"/><line/>
+    <switch text = "a" select = "true"/><line/>
+    <switch text = "b"/><line/>
+    <switch text = "c"/><line/>
+    
+    <basic   text = "world"/><line/>
+    <switch text = "a" select = "true"/><line/>
+    <switch text = "b"/><line/>
+    <switch text = "c"/><line/>
+    
+</table>

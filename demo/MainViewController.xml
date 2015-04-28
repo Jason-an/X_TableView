@@ -1,0 +1,10 @@
+<table>
+    
+    <basic text="pulldown zoom" onClick = "onPulldownZoomTest"/>
+    <line/>
+    <basic text="Radio Test" onClick = "onPushTest" filename="RadioTest.xml"/>
+    <line/>
+    <basic text="Switch Test" onClick = "onPushTest" filename="SwitchTest.xml"/>
+    <line/>
+    
+</table>

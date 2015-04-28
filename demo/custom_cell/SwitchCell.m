@@ -13,7 +13,6 @@
 
 - (void)update{
     self.textLabel.text = self.cellData[@"text"];
-    self.textLabel.textColor=[UIColor whiteColor];
     self.textLabel.backgroundColor=[UIColor clearColor];
     bool b = [self.cellData[@"select"] boolValue] || [self.cellData[@"select"] boolValue] ;
     [self.sw setOn:b];

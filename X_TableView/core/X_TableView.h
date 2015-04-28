@@ -41,6 +41,10 @@ typedef NS_ENUM(NSInteger, X_TableViewEvent) {
 -(void)addEffect:(id<X_TableViewEffect>)effect;
 -(void)removeEffect:(id<X_TableViewEffect>)effect;
 
+//query
+-(NSArray*)select:(NSString*)str where:(NSDictionary*)dic;
+-(void)update:(NSString*)str where:(NSDictionary*)dic set:(NSDictionary*)dic2;
+
 @end
 
 

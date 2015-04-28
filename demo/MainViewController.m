@@ -2,21 +2,8 @@
 #import "X_TableView.h"
 #import "X_XMLDataSource.h"
 
-
-#import "PulldownZoomViewController.h"
-
-
-
-void showAlter(NSString *title)
-{
-    UIAlertView *baseAlert = [[UIAlertView alloc]
-                              initWithTitle:title
-                              message:@"" delegate:nil
-                              cancelButtonTitle:@"ok" otherButtonTitles:nil];
-    [baseAlert show];
-    
-}
-
+#import "PulldownZoomTestViewController.h"
+#import "XMLTestViewController.h"
 
 @implementation MainViewController
 
@@ -25,15 +12,20 @@ void showAlter(NSString *title)
     self.title=@"demo";
 
     X_TableView *tbv = [[X_TableView alloc]init];
-    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"test.xml"];
+    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"MainViewController.xml"];
     
     __weak MainViewController *weakSelf = self;
-    [tbv addCellEventListenerWithName:@"f1" block:^(NSMutableDictionary *cellData) {
-        [weakSelf.navigationController pushViewController:[[PulldownZoomViewController alloc]init] animated:YES];
+    
+    [tbv addCellEventListenerWithName:@"onPulldownZoomTest" block:^(NSMutableDictionary *cellData) {
+        [weakSelf.navigationController pushViewController:[[PulldownZoomTestViewController alloc]init] animated:YES];
     }];
     
-    [tbv addCellEventListenerWithName:@"f2" block:^(NSMutableDictionary *cellData) {
-        showAlter(@"test");
+    
+    [tbv addCellEventListenerWithName:@"onPushTest" block:^(NSMutableDictionary *cellData) {
+        XMLTestViewController *vc = [[XMLTestViewController alloc]init];
+        vc.title = cellData[@"text"];
+        vc.filename = cellData[@"filename"];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     
     

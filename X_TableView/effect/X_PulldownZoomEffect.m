@@ -18,10 +18,8 @@
             X_TableViewCell *cell = (X_TableViewCell*)[weakTb cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             
             if (cell!=nil) {
-                
-                //NSLog(@"[cell getCellHeight]=%.2f",[cell getCellHeight]);
                 CGFloat w = weakTb.frame.size.width;
-                CGFloat h = 44-y;
+                CGFloat h = [cell getCellHeight]-y;
                 cell.frame = CGRectMake(0,y,w,h);
             }
         }

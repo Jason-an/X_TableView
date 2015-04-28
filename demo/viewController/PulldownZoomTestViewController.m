@@ -1,9 +1,9 @@
-#import "PulldownZoomViewController.h"
+#import "PulldownZoomTestViewController.h"
 #import "X_TableView.h"
 #import "X_XMLDataSource.h"
 #import "X_PulldownZoomEffect.h"
 
-@implementation PulldownZoomViewController
+@implementation PulldownZoomTestViewController
 
 -(void)viewDidLoad{
     [super viewDidLoad];
