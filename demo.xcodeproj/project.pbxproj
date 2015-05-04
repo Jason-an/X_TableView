@@ -15,6 +15,7 @@
 		A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD891AEFA3200069FC4D /* ImageCell.m */; };
 		A03CFD8C1AEFA3200069FC4D /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */; };
 		A03CFD8E1AEFA4490069FC4D /* hello.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8D1AEFA4490069FC4D /* hello.jpg */; };
+		A0554D041AF7644F00B3C931 /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A0554D031AF7644F00B3C931 /* NSMutableArray+x.m */; };
 		A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427771AEA2066003FB2F7 /* AppDelegate.m */; };
 		A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08427781AEA2066003FB2F7 /* LaunchScreen.xib */; };
 		A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A084277F1AEA2066003FB2F7 /* Images.xcassets */; };
@@ -26,8 +27,6 @@
 		A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */; };
 		A08427A31AEA2066003FB2F7 /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A084278C1AEA2066003FB2F7 /* X_TableView.m */; };
 		A08427A41AEA2066003FB2F7 /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A084278D1AEA2066003FB2F7 /* X_TableViewCell.m */; };
-		A08427A51AEA2066003FB2F7 /* X_ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427901AEA2066003FB2F7 /* X_ArrayDataSource.m */; };
-		A08427A61AEA2066003FB2F7 /* X_XMLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427921AEA2066003FB2F7 /* X_XMLDataSource.m */; };
 		A08427A71AEA2066003FB2F7 /* X_PulldownZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427951AEA2066003FB2F7 /* X_PulldownZoomEffect.m */; };
 		A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1B91AEF56A6009320FE /* BasicCell.m */; };
 		A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FEC1BA1AEF56A6009320FE /* BasicCell.xib */; };
@@ -49,6 +48,8 @@
 		A03CFD891AEFA3200069FC4D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		A03CFD8D1AEFA4490069FC4D /* hello.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hello.jpg; sourceTree = "<group>"; };
+		A0554D021AF7644F00B3C931 /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
+		A0554D031AF7644F00B3C931 /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
 		A08427761AEA2066003FB2F7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A08427771AEA2066003FB2F7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A08427791AEA2066003FB2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,10 +65,6 @@
 		A084278B1AEA2066003FB2F7 /* X_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableView.h; sourceTree = "<group>"; };
 		A084278C1AEA2066003FB2F7 /* X_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableView.m; sourceTree = "<group>"; };
 		A084278D1AEA2066003FB2F7 /* X_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCell.m; sourceTree = "<group>"; };
-		A084278F1AEA2066003FB2F7 /* X_ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_ArrayDataSource.h; sourceTree = "<group>"; };
-		A08427901AEA2066003FB2F7 /* X_ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_ArrayDataSource.m; sourceTree = "<group>"; };
-		A08427911AEA2066003FB2F7 /* X_XMLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_XMLDataSource.h; sourceTree = "<group>"; };
-		A08427921AEA2066003FB2F7 /* X_XMLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_XMLDataSource.m; sourceTree = "<group>"; };
 		A08427941AEA2066003FB2F7 /* X_PulldownZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownZoomEffect.h; sourceTree = "<group>"; };
 		A08427951AEA2066003FB2F7 /* X_PulldownZoomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownZoomEffect.m; sourceTree = "<group>"; };
 		A0FEC1B91AEF56A6009320FE /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
@@ -128,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				A084278A1AEA2066003FB2F7 /* core */,
-				A084278E1AEA2066003FB2F7 /* datasource */,
 				A08427931AEA2066003FB2F7 /* effect */,
 			);
 			path = X_TableView;
@@ -137,22 +133,13 @@
 		A084278A1AEA2066003FB2F7 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				A0554D021AF7644F00B3C931 /* NSMutableArray+x.h */,
+				A0554D031AF7644F00B3C931 /* NSMutableArray+x.m */,
 				A084278B1AEA2066003FB2F7 /* X_TableView.h */,
 				A084278C1AEA2066003FB2F7 /* X_TableView.m */,
 				A084278D1AEA2066003FB2F7 /* X_TableViewCell.m */,
 			);
 			path = core;
-			sourceTree = "<group>";
-		};
-		A084278E1AEA2066003FB2F7 /* datasource */ = {
-			isa = PBXGroup;
-			children = (
-				A084278F1AEA2066003FB2F7 /* X_ArrayDataSource.h */,
-				A08427901AEA2066003FB2F7 /* X_ArrayDataSource.m */,
-				A08427911AEA2066003FB2F7 /* X_XMLDataSource.h */,
-				A08427921AEA2066003FB2F7 /* X_XMLDataSource.m */,
-			);
-			path = datasource;
 			sourceTree = "<group>";
 		};
 		A08427931AEA2066003FB2F7 /* effect */ = {
@@ -282,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08427A61AEA2066003FB2F7 /* X_XMLDataSource.m in Sources */,
 				A0FEC1C71AEF56A6009320FE /* SwitchCell.m in Sources */,
 				A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */,
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
@@ -294,10 +280,10 @@
 				A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */,
 				A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */,
 				A084279E1AEA2066003FB2F7 /* main.m in Sources */,
-				A08427A51AEA2066003FB2F7 /* X_ArrayDataSource.m in Sources */,
 				A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */,
 				A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */,
 				A0FEC1C31AEF56A6009320FE /* LineCell.m in Sources */,
+				A0554D041AF7644F00B3C931 /* NSMutableArray+x.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

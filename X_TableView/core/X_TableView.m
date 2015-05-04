@@ -91,7 +91,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [_xDataSource getCount];
+    return _xDataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -197,56 +197,6 @@
     [super reloadData];
     [self eventCall:XTableViewDidReloadData];
 }
-
-
-
--(NSArray*)select:(NSString*)str where:(NSDictionary*)dic{
-    NSMutableArray* arr=[[NSMutableArray alloc]init];
-    
-    for (int i=0; i<[_xDataSource getCount]; i++) {
-        if ([_xDataSource[i][@"__tag__"]isEqualToString:str]) {
-            
-            NSDictionary* ddd=_xDataSource[i];
-            bool b = YES;
-            for (NSString *key in dic) {
-                if ([dic[key] isEqualToString:ddd[key]]==NO) {
-                    b=NO;
-                    break;
-                }
-            }
-            
-            if (b) {
-                [arr addObject:ddd];
-            }
-            
-            
-            
-        }
-    }
-    
-    return arr;
-}
-
--(void)update:(NSString*)str where:(NSDictionary*)dic set:(NSDictionary*)dic2{
-    NSArray* arr = [self select:str where:dic];
-    
-    for (NSMutableDictionary* d in arr){
-        for (NSString* key in dic2){
-            
-            d[key] = dic2[key];
-            
-        }
-    }
-    
-}
-
-
-
-
-
-
-
-
 
 
 

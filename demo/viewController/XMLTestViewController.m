@@ -1,6 +1,5 @@
 #import "XMLTestViewController.h"
 #import "X_TableView.h"
-#import "X_XMLDataSource.h"
 
 @implementation XMLTestViewController
 
@@ -8,7 +7,7 @@
     [super viewDidLoad];
     
     X_TableView *tbv = [[X_TableView alloc]init];
-    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:_filename];
+    tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:_filename];
     
     self.view = tbv;
 }

@@ -20,8 +20,8 @@
 
 -(void)didSelect{
     
-    [self.xTableView
-        update:@"radio"
+    [self.xTableView.xDataSource
+        x_update:@"radio"
         where:@{@"groupid":self.cellData[@"groupid"]}
         set:@{@"select":@"false"}
     ];

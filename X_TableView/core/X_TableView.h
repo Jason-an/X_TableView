@@ -2,6 +2,8 @@
 #import <UIKit/UIKit.h>
 
 
+#import "NSMutableArray+x.h"
+
 typedef NS_ENUM(NSInteger, X_TableViewEvent) {
     XTableViewDidScroll,
     XTableViewWillReloadData,
@@ -15,17 +17,12 @@ typedef NS_ENUM(NSInteger, X_TableViewEvent) {
 -(void)onEffectRemove:(X_TableView *)xTableView;
 @end
 
-@protocol X_TableViewDataSource <NSObject>
--(NSUInteger)getCount;
--(NSMutableDictionary*)objectAtIndexedSubscript:(NSUInteger)index;
-@end
-
-
 @interface X_TableView : UITableView
 
 //dataSource and delegate are disabled
 //it's not weak
-@property(nonatomic,strong)id<X_TableViewDataSource> xDataSource;
+//@property(nonatomic,strong)id<X_TableViewDataSource> xDataSource;
+@property(nonatomic,strong)NSMutableArray *xDataSource;
 
 //tableView event
 //instead of KVO
@@ -40,10 +37,6 @@ typedef NS_ENUM(NSInteger, X_TableViewEvent) {
 //effect
 -(void)addEffect:(id<X_TableViewEffect>)effect;
 -(void)removeEffect:(id<X_TableViewEffect>)effect;
-
-//query
--(NSArray*)select:(NSString*)str where:(NSDictionary*)dic;
--(void)update:(NSString*)str where:(NSDictionary*)dic set:(NSDictionary*)dic2;
 
 @end
 

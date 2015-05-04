@@ -1,7 +1,5 @@
 #import "MainViewController.h"
 #import "X_TableView.h"
-#import "X_XMLDataSource.h"
-
 #import "PulldownZoomTestViewController.h"
 #import "XMLTestViewController.h"
 
@@ -10,9 +8,10 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.title=@"demo";
+    
 
     X_TableView *tbv = [[X_TableView alloc]init];
-    tbv.xDataSource = [X_XMLDataSource xmlDataSourceWithFileName:@"MainViewController.xml"];
+    tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"MainViewController.xml"];
     
     __weak MainViewController *weakSelf = self;
     
