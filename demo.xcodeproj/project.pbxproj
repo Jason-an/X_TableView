@@ -15,6 +15,7 @@
 		A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD891AEFA3200069FC4D /* ImageCell.m */; };
 		A03CFD8C1AEFA3200069FC4D /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */; };
 		A03CFD8E1AEFA4490069FC4D /* hello.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8D1AEFA4490069FC4D /* hello.jpg */; };
+		A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */; };
 		A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427771AEA2066003FB2F7 /* AppDelegate.m */; };
 		A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08427781AEA2066003FB2F7 /* LaunchScreen.xib */; };
 		A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A084277F1AEA2066003FB2F7 /* Images.xcassets */; };
@@ -48,6 +49,8 @@
 		A03CFD891AEFA3200069FC4D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		A03CFD8D1AEFA4490069FC4D /* hello.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hello.jpg; sourceTree = "<group>"; };
+		A0840A9B1AF8A14B00696B83 /* F1__ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F1__ViewController.h; sourceTree = "<group>"; };
+		A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F1__ViewController.m; sourceTree = "<group>"; };
 		A08427761AEA2066003FB2F7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A08427771AEA2066003FB2F7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A08427791AEA2066003FB2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				A08427861AEA2066003FB2F7 /* PulldownZoomTestViewController.h */,
 				A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */,
 				A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */,
+				A0840A9B1AF8A14B00696B83 /* F1__ViewController.h */,
+				A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				A09993A81AF89D240077E60C /* X_TableView.m in Sources */,
 				A0FEC1C71AEF56A6009320FE /* SwitchCell.m in Sources */,
 				A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */,
+				A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */,
 				A09993A61AF89D240077E60C /* NSMutableArray+x.m in Sources */,
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
 				A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */,

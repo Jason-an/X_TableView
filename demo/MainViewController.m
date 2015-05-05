@@ -2,6 +2,7 @@
 #import "X_TableView.h"
 #import "PulldownZoomTestViewController.h"
 #import "XMLTestViewController.h"
+#import "F1__ViewController.h"
 
 @implementation MainViewController
 
@@ -14,6 +15,10 @@
     tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"MainViewController.xml"];
     
     __weak MainViewController *weakSelf = self;
+    
+    [tbv addCellEventListenerWithName:@"onWebDataTest" block:^(NSMutableDictionary *cellData) {
+        [weakSelf.navigationController pushViewController:[[F1__ViewController alloc]init] animated:YES];
+    }];
     
     [tbv addCellEventListenerWithName:@"onPulldownZoomTest" block:^(NSMutableDictionary *cellData) {
         [weakSelf.navigationController pushViewController:[[PulldownZoomTestViewController alloc]init] animated:YES];

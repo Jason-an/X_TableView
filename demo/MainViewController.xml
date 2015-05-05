@@ -1,5 +1,7 @@
 <table>
     
+    <basic text="动态数据" onClick = "onWebDataTest"/>
+    <line/>
     <basic text="pulldown zoom" onClick = "onPulldownZoomTest"/>
     <line/>
     <basic text="Radio Test" onClick = "onPushTest" filename="RadioTest.xml"/>
