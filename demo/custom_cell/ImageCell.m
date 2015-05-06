@@ -13,8 +13,11 @@
     _imgView.image = [UIImage imageNamed:@"hello.jpg"];
 }
 
--(CGFloat)getCellHeight{
-    return 256;
-}
-
+//-(CGFloat)getCellHeight{
+//    return 256;
+//}
+//-(void)didSelect
+//{
+//        [super dispatchCellEventWithName:self.cellData[@"onClick"]];
+//}
 @end

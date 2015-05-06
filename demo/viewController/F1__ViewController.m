@@ -15,11 +15,22 @@
                          @"text":[NSString stringWithFormat:@"%d",i+1],
                          @"onClick":@"f1"
                          } mutableCopy]];
+        if (i==29) {
+            [arr addObject:[@{
+                              @"__tag__":@"image",
+                              @"text":[NSString stringWithFormat:@"%d",i+1],
+                              @"onClick":@"liyingying"
+                              } mutableCopy]];
+        }
     }
     
     X_TableView *tbv = [[X_TableView alloc]init];
     tbv.xDataSource = arr;
 
+    [tbv addCellEventListenerWithName:@"liyingying" block:^(NSMutableDictionary *cellData) {
+        NSLog(@"123123123");
+       // [self.navigationController popToRootViewControllerAnimated:YES];
+    }];
     [tbv addCellEventListenerWithName:@"f1" block:^(NSMutableDictionary *cellData) {
         NSLog(@"cellData=%@",cellData);
     }];
