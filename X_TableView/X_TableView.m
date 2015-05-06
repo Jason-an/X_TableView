@@ -111,8 +111,12 @@
 }
 
 -(NSString*)getCellNameWithTagName:(NSString*)tagName{
+    
     NSString *ch = [[tagName substringToIndex:1] uppercaseString];
     NSString *str = [tagName substringFromIndex:1];
+    if ([str containsString:@"Cell"]) {
+        return [NSString stringWithFormat:@"%@%@",ch,str];
+    }
     return [NSString stringWithFormat:@"%@%@Cell",ch,str];
 }
 
