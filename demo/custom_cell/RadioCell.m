@@ -6,7 +6,7 @@
 @implementation RadioCell
 
 - (void)update{
-    self.textLabel.text = self.cellData[@"text"];
+    self.textLabel.text = self.cellData[kCellText];
     
     if ([self.cellData[@"select"] boolValue]) {
         self.accessoryType = UITableViewCellAccessoryCheckmark;

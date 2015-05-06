@@ -27,7 +27,7 @@
     
     [tbv addCellEventListenerWithName:@"onPushTest" block:^(NSMutableDictionary *cellData) {
         XMLTestViewController *vc = [[XMLTestViewController alloc]init];
-        vc.title = cellData[@"text"];
+        vc.title = cellData[kCellText];
         vc.filename = cellData[@"filename"];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];

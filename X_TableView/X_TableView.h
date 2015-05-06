@@ -1,10 +1,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
 #import "NSMutableArray+x.h"
+#import "X_TableViewCellData_Key.h"
 
-extern const NSString* const CELL_TAG;
 
 typedef NS_ENUM(NSInteger, X_TableViewEvent) {
     XTableViewDidScroll,

@@ -25,6 +25,7 @@
 		A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427841AEA2066003FB2F7 /* MainViewController.xml */; };
 		A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */; };
 		A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */; };
+		A0966BE61AF9C2E900D38C85 /* X_TableViewCellData_Key.m in Sources */ = {isa = PBXBuildFile; fileRef = A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */; };
 		A09993A61AF89D240077E60C /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A01AF89D240077E60C /* NSMutableArray+x.m */; };
 		A09993A71AF89D240077E60C /* X_PulldownZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A21AF89D240077E60C /* X_PulldownZoomEffect.m */; };
 		A09993A81AF89D240077E60C /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A41AF89D240077E60C /* X_TableView.m */; };
@@ -63,6 +64,8 @@
 		A08427861AEA2066003FB2F7 /* PulldownZoomTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownZoomTestViewController.h; sourceTree = "<group>"; };
 		A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownZoomTestViewController.m; sourceTree = "<group>"; };
 		A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PulldownZoomViewController.xml; sourceTree = "<group>"; };
+		A0966BE11AF9C2D200D38C85 /* X_TableViewCellData_Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableViewCellData_Key.h; sourceTree = "<group>"; };
+		A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCellData_Key.m; sourceTree = "<group>"; };
 		A099939F1AF89D240077E60C /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
 		A09993A01AF89D240077E60C /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
 		A09993A11AF89D240077E60C /* X_PulldownZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownZoomEffect.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				A09993A31AF89D240077E60C /* X_TableView.h */,
 				A09993A41AF89D240077E60C /* X_TableView.m */,
 				A09993A51AF89D240077E60C /* X_TableViewCell.m */,
+				A0966BE11AF9C2D200D38C85 /* X_TableViewCellData_Key.h */,
+				A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */,
 			);
 			path = X_TableView;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
 				A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */,
 				A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */,
+				A0966BE61AF9C2E900D38C85 /* X_TableViewCellData_Key.m in Sources */,
 				A0FEC1C51AEF56A6009320FE /* NoneCell.m in Sources */,
 				A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */,
 				A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */,

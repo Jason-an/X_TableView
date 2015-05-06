@@ -7,7 +7,7 @@
 @implementation BasicCell
 
 - (void)update{
-    self.textLabel.text = self.cellData[@"text"];
+    self.textLabel.text = self.cellData[kCellText];
 }
 
 @end

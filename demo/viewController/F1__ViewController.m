@@ -11,15 +11,15 @@
     
     for (int i=0; i<1000; i++) {
         [arr addObject:[@{
-                         CELL_TAG:@"basic",
-                         @"text":[NSString stringWithFormat:@"%d",i+1],
-                         @"didSeclect":@"f1"
+                         kCellTag:@"basic",
+                         kCellText:[NSString stringWithFormat:@"%d",i+1],
+                         kCellDidSelect:@"f1"
                          } mutableCopy]];
         if (i==29) {
             [arr addObject:[@{
-                              CELL_TAG:@"image",
-                              @"text":[NSString stringWithFormat:@"%d",i+1],
-                              @"didSeclect":@"liyingying"
+                              kCellTag:@"image",
+                              kCellText:[NSString stringWithFormat:@"%d",i+1],
+                              kCellDidSelect:@"liyingying"
                               } mutableCopy]];
         }
     }
