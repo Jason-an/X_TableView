@@ -110,10 +110,15 @@
     return 0;
 }
 
+-(NSString*)getCellNameWithTagName:(NSString*)tagName{
+    NSString *ch = [[tagName substringToIndex:1] uppercaseString];
+    NSString *str = [tagName substringFromIndex:1];
+    return [NSString stringWithFormat:@"%@%@Cell",ch,str];
+}
 
 - (X_TableViewCell*)getCellWithTableView:(UITableView*)tbv tagName:(NSString*)tagName cellData:(NSMutableDictionary*)dic{
     
-    NSString* cellName = [NSString stringWithFormat:@"%@Cell",[tagName capitalizedString]];
+    NSString* cellName = [self getCellNameWithTagName:tagName];
     X_TableViewCell* cell = [tbv dequeueReusableCellWithIdentifier:cellName];
     if(!cell){
         cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
@@ -128,9 +133,7 @@
 
 - (CGFloat)getCellHeightWithTagName:(NSString*)tagName andCellData:(NSMutableDictionary*)dic{
     
-    NSString* cellName = [NSString stringWithFormat:@"%@Cell",[tagName capitalizedString]];
-    
-    
+    NSString* cellName = [self getCellNameWithTagName:tagName];
     static NSMutableDictionary *cellDic = nil;
     
     if (cellDic==nil) {
