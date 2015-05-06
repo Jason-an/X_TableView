@@ -8,9 +8,9 @@
     [super viewDidLoad];
     self.title=@"pulldown zoom";
     
-    X_TableView *tbv = [[X_TableView alloc]init];
+    X_TableView *tbv = [X_TableView new];
     tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"PulldownZoomViewController.xml"];
-    [tbv addEffect:[[X_PulldownZoomEffect alloc]init]];
+    [tbv addEffect:[X_PulldownZoomEffect new]];
     
     self.view = tbv;
 }

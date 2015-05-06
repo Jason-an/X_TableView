@@ -14,14 +14,14 @@
     [super viewDidLoad];
     self.title=@"下拉刷新测试";
     
-    _tbv = [[X_TableView alloc]init];
+    _tbv = [X_TableView new];
     _tbv.xDataSource = [@[
                          [@{kCellTag:@"basic",kCellText:@"数据1111"}mutableCopy],
                          [@{kCellTag:@"basic",kCellText:@"数据1111"}mutableCopy],
                          [@{kCellTag:@"basic",kCellText:@"数据1111"}mutableCopy],
                        ] mutableCopy];
     
-    _effect = [[X_PulldownRefreshEffect alloc]init];
+    _effect = [X_PulldownRefreshEffect new];
     
     
     __weak PulldownRefreshTestViewController *weakSelf = self;

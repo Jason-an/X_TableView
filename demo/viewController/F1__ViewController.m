@@ -7,7 +7,7 @@
     [super viewDidLoad];
     
     
-    NSMutableArray *arr=[[NSMutableArray alloc]init];
+    NSMutableArray *arr=[NSMutableArray new];
     
     for (int i=0; i<30; i++) {
         [arr addObject:[@{
@@ -24,7 +24,7 @@
         }
     }
     
-    X_TableView *tbv = [[X_TableView alloc]init];
+    X_TableView *tbv = [X_TableView new];
     tbv.xDataSource = arr;
 
     [tbv addCellEventListenerWithName:@"liyingying" block:^(NSMutableDictionary *cellData) {

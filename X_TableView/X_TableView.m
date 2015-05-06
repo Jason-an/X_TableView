@@ -34,9 +34,9 @@
 
 -(void)init2{
     
-    _eventDic = [[NSMutableDictionary alloc]init];
-    _blockDic = [[NSMutableDictionary alloc]init];
-    _effectDic = [[NSMutableDictionary alloc]init];
+    _eventDic = [NSMutableDictionary new];
+    _blockDic = [NSMutableDictionary new];
+    _effectDic = [NSMutableDictionary new];
 
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -47,7 +47,7 @@
 -(void)addTableEventListenerWithId:(id)Id name:(enum X_TableViewEvent)name block:(void(^)())block{
     NSString *key = [NSString stringWithFormat:@"%p",Id];
     if (_eventDic[key]==nil) {
-        _eventDic[key]=[[NSMutableArray alloc]init];
+        _eventDic[key]=[NSMutableArray new];
     }
     NSMutableArray *arr = _eventDic[key];
     [arr addObject:@{@"name":[NSNumber numberWithInteger:name],@"block":block}];
@@ -141,7 +141,7 @@
     static NSMutableDictionary *cellDic = nil;
     
     if (cellDic==nil) {
-        cellDic = [[NSMutableDictionary alloc]init];
+        cellDic = [NSMutableDictionary new];
     }
     
     X_TableViewCell* cell = cellDic[cellName];

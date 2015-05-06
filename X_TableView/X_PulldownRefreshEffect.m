@@ -20,7 +20,7 @@
 }
 
 -(void)onEffectAdd:(X_TableView *)xTableView{
-    _refreshControl = [[UIRefreshControl alloc] init];
+    _refreshControl = [UIRefreshControl new];
     [_refreshControl addTarget:self action:@selector(onRefresh) forControlEvents:UIControlEventValueChanged];
     [xTableView insertSubview:_refreshControl atIndex:0];
 }

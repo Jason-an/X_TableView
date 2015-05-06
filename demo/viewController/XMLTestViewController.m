@@ -6,7 +6,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    X_TableView *tbv = [[X_TableView alloc]init];
+    X_TableView *tbv = [X_TableView new];
     tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:_filename];
     
     self.view = tbv;

@@ -43,7 +43,7 @@
 
 
 -(NSMutableArray*)loadXML:(NSString*)filename{
-    arr = [[NSMutableArray alloc]init];
+    arr = [NSMutableArray new];
     NSData *data = [self readResData:filename];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     [parser setDelegate:self];
@@ -53,7 +53,7 @@
 
 
 + (NSMutableArray *)xmlDataSourceWithFileName:(NSString*)filename{
-    X_XMLDataSource *d = [[X_XMLDataSource alloc]init];
+    X_XMLDataSource *d = [X_XMLDataSource new];
     return [d loadXML:filename];
 }
 
@@ -72,7 +72,7 @@
 
 -(NSMutableArray*)x_select:(NSString*)str where:(NSDictionary*)dic{
     
-    NSMutableArray* arr=[[NSMutableArray alloc]init];
+    NSMutableArray* arr=[NSMutableArray new];
     
     for (int i=0; i<self.count; i++) {
         if ([self[i][kCellTag]isEqualToString:str]) {
