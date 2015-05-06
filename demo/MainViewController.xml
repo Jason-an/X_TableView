@@ -1,5 +1,7 @@
 <table>
     
+    <basic text="下拉刷新" didSeclect = "onPullDownRefreshTest"/>
+    <line/>
     <basic text="动态数据" didSeclect = "onWebDataTest"/>
     <line/>
     <basic text="pulldown zoom" didSeclect = "onPulldownZoomTest"/>
