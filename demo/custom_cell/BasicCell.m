@@ -10,8 +10,4 @@
     self.textLabel.text = self.cellData[@"text"];
 }
 
--(void)didSelect{
-    [super dispatchCellEventWithName:self.cellData[@"onClick"]];
-}
-
 @end

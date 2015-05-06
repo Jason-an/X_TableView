@@ -4,6 +4,8 @@
 
 #import "NSMutableArray+x.h"
 
+extern const NSString* const CELL_TAG;
+
 typedef NS_ENUM(NSInteger, X_TableViewEvent) {
     XTableViewDidScroll,
     XTableViewWillReloadData,

@@ -1,5 +1,5 @@
 #import "NSMutableArray+x.h"
-
+#import "X_TableView.h"
 
 @interface X_XMLDataSource : NSObject
 + (NSMutableArray *)xmlDataSourceWithFileName:(NSString*)filename;
@@ -28,7 +28,7 @@
     }
     
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:attributeDict];
-    dic[@"__tag__"]=elementName;
+    dic[CELL_TAG]=elementName;
     [arr addObject:dic];
     
 }
@@ -75,7 +75,7 @@
     NSMutableArray* arr=[[NSMutableArray alloc]init];
     
     for (int i=0; i<self.count; i++) {
-        if ([self[i][@"__tag__"]isEqualToString:str]) {
+        if ([self[i][CELL_TAG]isEqualToString:str]) {
             
             NSDictionary* ddd=self[i];
             bool b = YES;

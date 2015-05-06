@@ -1,5 +1,9 @@
 #import "X_TableView.h"
 
+
+const NSString* const CELL_TAG = @"__tag__";
+
+
 @interface X_TableView()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property(nonatomic)NSMutableDictionary* eventDic; // key --> string | value --> array{name:string,block:void(^)()}
 @property(nonatomic)NSMutableDictionary* blockDic; // key --> string | value --> void (^)(NSMutableDictionary* cellData)
@@ -96,7 +100,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [self getCellWithTableView:tableView
-                              tagName:_xDataSource[indexPath.row][@"__tag__"]
+                              tagName:_xDataSource[indexPath.row][CELL_TAG]
                              cellData:_xDataSource[indexPath.row]
             ];
 }
@@ -155,7 +159,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self getCellHeightWithTagName:_xDataSource[indexPath.row][@"__tag__"] andCellData:_xDataSource[indexPath.row]];
+    return [self getCellHeightWithTagName:_xDataSource[indexPath.row][CELL_TAG] andCellData:_xDataSource[indexPath.row]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

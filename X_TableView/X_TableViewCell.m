@@ -12,7 +12,7 @@
 }
 
 -(void)didSelect{
-    
+    [self dispatchCellEventWithName:self.cellData[@"didSeclect"]];
 }
 
 -(CGFloat)getCellHeight{

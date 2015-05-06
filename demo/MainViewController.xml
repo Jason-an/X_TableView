@@ -1,12 +1,12 @@
 <table>
     
-    <basic text="动态数据" onClick = "onWebDataTest"/>
+    <basic text="动态数据" didSeclect = "onWebDataTest"/>
     <line/>
-    <basic text="pulldown zoom" onClick = "onPulldownZoomTest"/>
+    <basic text="pulldown zoom" didSeclect = "onPulldownZoomTest"/>
     <line/>
-    <basic text="Radio Test" onClick = "onPushTest" filename="RadioTest.xml"/>
+    <basic text="Radio Test" didSeclect = "onPushTest" filename="RadioTest.xml"/>
     <line/>
-    <basic text="Switch Test" onClick = "onPushTest" filename="SwitchTest.xml"/>
+    <basic text="Switch Test" didSeclect = "onPushTest" filename="SwitchTest.xml"/>
     <line/>
     
 </table>
