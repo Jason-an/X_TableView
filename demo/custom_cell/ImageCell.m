@@ -9,15 +9,12 @@
 
 @implementation ImageCell
 
-- (void)update{
+- (void)xibDidLoad{
     _imgView.image = [UIImage imageNamed:@"hello.jpg"];
 }
 
-//-(CGFloat)getCellHeight{
-//    return 256;
-//}
-//-(void)didSelect
-//{
-//        [super dispatchCellEventWithName:self.cellData[@"onClick"]];
-//}
+-(CGFloat)getCellHeight{
+    return 256;
+}
+
 @end

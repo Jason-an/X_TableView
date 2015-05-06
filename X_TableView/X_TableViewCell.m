@@ -3,7 +3,7 @@
 @implementation X_TableViewCell
 
 
--(void)initialize{
+-(void)xibDidLoad{
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 

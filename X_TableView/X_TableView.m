@@ -126,7 +126,7 @@
     X_TableViewCell* cell = [tbv dequeueReusableCellWithIdentifier:cellName];
     if(!cell){
         cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
-        [cell initialize];
+        [cell xibDidLoad];
         cell.xTableView = self;
     }
     cell.cellData = dic;
@@ -147,7 +147,7 @@
     X_TableViewCell* cell = cellDic[cellName];
     if (cell==nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
-        [cell initialize];
+        [cell xibDidLoad];
         cell.xTableView = self;
         cellDic[cellName] = cell;
     }

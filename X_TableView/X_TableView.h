@@ -5,7 +5,7 @@
 #import "X_TableViewCellData_Key.h"
 
 
-typedef NS_ENUM(NSInteger, X_TableViewEvent) {
+typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
     XTableViewDidScroll,
     XTableViewWillReloadData,
     XTableViewDidReloadData,
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, X_TableViewEvent) {
 @interface X_TableViewCell : UITableViewCell
 @property(nonatomic,weak) X_TableView *xTableView;
 @property(nonatomic) NSMutableDictionary *cellData;
--(void)initialize;
+-(void)xibDidLoad;
 -(void)update;
 -(void)didSelect;
 -(CGFloat)getCellHeight;

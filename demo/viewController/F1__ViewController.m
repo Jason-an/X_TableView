@@ -9,13 +9,13 @@
     
     NSMutableArray *arr=[[NSMutableArray alloc]init];
     
-    for (int i=0; i<1000; i++) {
+    for (int i=0; i<30; i++) {
         [arr addObject:[@{
                          kCellTag:@"basic",
                          kCellText:[NSString stringWithFormat:@"%d",i+1],
                          kCellDidSelect:@"f1"
                          } mutableCopy]];
-        if (i==29) {
+        if (i==5) {
             [arr addObject:[@{
                               kCellTag:@"image",
                               kCellText:[NSString stringWithFormat:@"%d",i+1],
