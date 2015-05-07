@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 
 //tableView event
 //instead of KVO
--(void)addTableEventListenerWithId:(id)Id name:(enum X_TableViewEvent)name block:(void(^)())block;
+-(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block;
 -(void)removeTableEventWithId:(id)Id;
 
 //cell event

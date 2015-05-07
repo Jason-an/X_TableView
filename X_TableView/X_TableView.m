@@ -44,7 +44,7 @@
     [super setDelegate:self];
 }
 
--(void)addTableEventListenerWithId:(id)Id name:(enum X_TableViewEvent)name block:(void(^)())block{
+-(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block{
     NSString *key = [NSString stringWithFormat:@"%p",Id];
     if (_eventDic[key]==nil) {
         _eventDic[key]=[NSMutableArray new];
@@ -171,7 +171,7 @@
 }
 
 
--(void)eventCall:(enum X_TableViewEvent)name{
+-(void)eventCall:(X_TableViewEvent)name{
     for (NSString *key in _eventDic) {
         for (NSDictionary *dic in _eventDic[key]) {
             if ([dic[@"name"] integerValue]==name) {

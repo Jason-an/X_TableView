@@ -1,10 +1,12 @@
 <table>
     
-    <basic text="下拉刷新" didSeclect = "onPullDownRefreshTest"/>
+    <basic text="下拉选择" didSeclect = "push" viewController="PulldownToSelectTestViewController"/>
     <line/>
-    <basic text="动态数据" didSeclect = "onWebDataTest"/>
+    <basic text="下拉刷新" didSeclect = "push" viewController="PulldownRefreshTestViewController"/>
     <line/>
-    <basic text="pulldown zoom" didSeclect = "onPulldownZoomTest"/>
+    <basic text="动态数据" didSeclect = "push" viewController="F1__ViewController"/>
+    <line/>
+    <basic text="下拉放大" didSeclect = "push" viewController="PulldownZoomTestViewController"/>
     <line/>
     <basic text="Radio Test" didSeclect = "onPushTest" filename="RadioTest.xml"/>
     <line/>
