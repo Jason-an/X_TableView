@@ -1,5 +1,7 @@
 <table>
     
+    <basic text="删除" didSeclect="push" viewController="EditViewController">
+    <line/>
     <basic text="下拉选择" didSeclect = "push" viewController="PulldownToSelectTestViewController"/>
     <line/>
     <basic text="下拉刷新" didSeclect = "push" viewController="PulldownRefreshTestViewController"/>

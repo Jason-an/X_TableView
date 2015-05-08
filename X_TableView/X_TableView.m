@@ -4,6 +4,7 @@
 @property(nonatomic)NSMutableDictionary* eventDic; // key --> string | value --> array{name:string,block:void(^)()}
 @property(nonatomic)NSMutableDictionary* blockDic; // key --> string | value --> void (^)(NSMutableDictionary* cellData)
 @property(nonatomic)NSMutableDictionary* effectDic;// key --> string | value --> id<X_TableViewEffect>
+@property(nonatomic,copy)void(^commitEditingBlock)(UITableViewCellEditingStyle style,NSInteger index);
 @end
 
 
@@ -85,6 +86,10 @@
 
 -(void)removeAllCellEvent{
     [_blockDic removeAllObjects];
+}
+
+-(void)addCommitEditingEventWithBlock:(void(^)(UITableViewCellEditingStyle style,NSInteger index))block{
+    _commitEditingBlock = block;
 }
 
 
@@ -206,7 +211,7 @@
 }
 
 
-/*
+//*
 #pragma -mark UITableViewDelegate
 
 
@@ -306,7 +311,14 @@
 // Editing
 
 // Individual rows can opt out of having the -editing property set for them. If not implemented, all rows are assumed to be editable.
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *s=_xDataSource[indexPath.row][kCellCanEdit];
+    if (s!=nil && [s isKindOfClass:[NSString class]]) {
+        return [s boolValue];
+    }
+    return NO;
+}
 
 // Moving/reordering
 
@@ -322,12 +334,16 @@
 
 // After a row has the minus or plus button invoked (based on the UITableViewCellEditingStyle for the cell), the dataSource must commit the change
 // Not called for edit actions using UITableViewRowAction - the action's handler will be invoked instead
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (_commitEditingBlock) {
+        _commitEditingBlock(editingStyle,indexPath.row);
+    }
+}
 
 // Data manipulation - reorder / moving support
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{}
-*/
+//*/
 
 @end
 

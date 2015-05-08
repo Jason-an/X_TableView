@@ -3,3 +3,4 @@
 const NSString* const kCellTag = @"__tag__";
 const NSString* const kCellDidSelect = @"didSeclect";
 const NSString* const kCellText  = @"text";
+const NSString* const kCellCanEdit = @"canEdit";

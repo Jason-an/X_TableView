@@ -39,6 +39,8 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 -(void)addEffect:(id<X_TableViewEffect>)effect;
 -(void)removeEffect:(id<X_TableViewEffect>)effect;
 
+//other event
+-(void)addCommitEditingEventWithBlock:(void(^)(UITableViewCellEditingStyle style,NSInteger index))block;
 @end
 
 

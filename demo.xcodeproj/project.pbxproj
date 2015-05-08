@@ -34,6 +34,7 @@
 		A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A51AF89D240077E60C /* X_TableViewCell.m */; };
 		A0C035581AFA0D8200DD119D /* X_PulldownRefreshEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C035571AFA0D8200DD119D /* X_PulldownRefreshEffect.m */; };
 		A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */; };
+		A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */; };
 		A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1B91AEF56A6009320FE /* BasicCell.m */; };
 		A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FEC1BA1AEF56A6009320FE /* BasicCell.xib */; };
 		A0FEC1C31AEF56A6009320FE /* LineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1BB1AEF56A6009320FE /* LineCell.m */; };
@@ -85,6 +86,8 @@
 		A0C035571AFA0D8200DD119D /* X_PulldownRefreshEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownRefreshEffect.m; sourceTree = "<group>"; };
 		A0C035591AFA0E8400DD119D /* PulldownRefreshTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownRefreshTestViewController.h; sourceTree = "<group>"; };
 		A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownRefreshTestViewController.m; sourceTree = "<group>"; };
+		A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		A0FEC1B91AEF56A6009320FE /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
 		A0FEC1BA1AEF56A6009320FE /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 		A0FEC1BB1AEF56A6009320FE /* LineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCell.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */,
 				A08B6A731AFB0935009FCA7F /* PulldownToSelectTestViewController.h */,
 				A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */,
+				A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */,
+				A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
 				A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */,
 				A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */,
+				A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */,
 				A0966BE61AF9C2E900D38C85 /* X_TableViewCellData_Key.m in Sources */,
 				A0FEC1C51AEF56A6009320FE /* NoneCell.m in Sources */,
 				A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */,
