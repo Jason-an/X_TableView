@@ -206,7 +206,7 @@
 }
 
 
-
+/*
 #pragma -mark UITableViewDelegate
 
 
@@ -327,6 +327,7 @@
 // Data manipulation - reorder / moving support
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{}
+*/
 
 @end
 
