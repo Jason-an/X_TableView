@@ -20,13 +20,15 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 
 @interface X_TableView : UITableView
 
+//-------
 //dataSource and delegate are disabled
-//it's not weak
-//@property(nonatomic,strong)id<X_TableViewDataSource> xDataSource;
+//event instead of KVO
+
+//-------------data-------------
 @property(nonatomic,strong)NSMutableArray *xDataSource;
 
-//tableView event
-//instead of KVO
+//-------------event-------------
+//table event
 -(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block;
 -(void)removeTableEventWithId:(id)Id;
 
@@ -35,12 +37,12 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 -(void)dispatchCellEventWithName:(NSString *)name data:(NSMutableDictionary*)data;
 -(void)removeAllCellEvent;
 
-//effect
--(void)addEffect:(id<X_TableViewEffect>)effect;
--(void)removeEffect:(id<X_TableViewEffect>)effect;
-
 //other event
 -(void)addCommitEditingEventWithBlock:(void(^)(UITableViewCellEditingStyle style,NSInteger index))block;
+
+//-------------effect-------------
+-(void)addEffect:(id<X_TableViewEffect>)effect;
+-(void)removeEffect:(id<X_TableViewEffect>)effect;
 @end
 
 

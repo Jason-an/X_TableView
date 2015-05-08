@@ -24,6 +24,8 @@
     [tbv addCommitEditingEventWithBlock:^(UITableViewCellEditingStyle style, NSInteger index) {
         [weakTb.xDataSource removeObjectAtIndex:index];
         
+        
+        //temp
         [weakTb deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
 
     }];
