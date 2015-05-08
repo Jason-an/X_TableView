@@ -45,6 +45,10 @@
     [super setDelegate:self];
 }
 
+-(NSIndexPath*)indexToIndexPath:(NSInteger)index{
+    return [NSIndexPath indexPathForRow:index inSection:0];
+}
+
 -(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block{
     NSString *key = [NSString stringWithFormat:@"%p",Id];
     if (_eventDic[key]==nil) {

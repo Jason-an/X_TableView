@@ -26,7 +26,7 @@
         
         
         //temp
-        [weakTb deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [weakTb deleteRowsAtIndexPaths:[NSArray arrayWithObject:[weakTb indexToIndexPath:index]] withRowAnimation:UITableViewRowAnimationAutomatic];
 
     }];
     

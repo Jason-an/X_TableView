@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 
 //-------------data-------------
 @property(nonatomic,strong)NSMutableArray *xDataSource;
+-(NSIndexPath*)indexToIndexPath:(NSInteger)index;
 
 //-------------event-------------
 //table event
@@ -44,6 +45,8 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 //-------------effect-------------
 -(void)addEffect:(id<X_TableViewEffect>)effect;
 -(void)removeEffect:(id<X_TableViewEffect>)effect;
+
+
 @end
 
 
