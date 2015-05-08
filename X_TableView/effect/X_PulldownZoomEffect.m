@@ -12,7 +12,7 @@
     __weak X_TableView* weakTb = xTableView;
     //__weak PulldownZoomEffect* weakSelf = self;
     
-    [weakTb addTableEventListenerWithId:self name:XTableViewDidScroll block:^{
+    [weakTb addTableEventListenerWithId:self name:X_TableViewDidScroll block:^{
         CGFloat y = weakTb.contentOffset.y + weakTb.contentInset.top;//
         if (y<0) {
             X_TableViewCell *cell = (X_TableViewCell*)[weakTb cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];

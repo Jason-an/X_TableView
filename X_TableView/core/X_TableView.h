@@ -6,9 +6,11 @@
 
 
 typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
-    XTableViewDidScroll,
-    XTableViewWillReloadData,
-    XTableViewDidReloadData,
+    X_TableViewDidScroll,
+    X_TableViewWillReloadData,
+    X_TableViewDidReloadData,
+    X_TableViewDidSetFrame,
+    X_TableViewDidLayoutSubviews,
 };
 
 @class X_TableView;
@@ -30,7 +32,6 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 //-------------event-------------
 //table event
 -(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block;
--(void)removeTableEventWithId:(id)Id;
 
 //cell event
 -(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block;

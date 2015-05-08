@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextfiledCell" id="KGk-i7-Jjw" customClass="TextfiledCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpY-v5-V7b" userLabel="textFieldContainer">
+                        <rect key="frame" x="8" y="3" width="382" height="48"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="邮箱地址" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="djc-sU-JDs" userLabel="emailTextField">
+                                <rect key="frame" x="8" y="0.0" width="366" height="48"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="onEdit" destination="KGk-i7-Jjw" eventType="editingChanged" id="ExS-Kx-zRL"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="pa4-u8-OYp"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="MPG-fP-oYC"/>
+                            <constraint firstItem="djc-sU-JDs" firstAttribute="leading" secondItem="bpY-v5-V7b" secondAttribute="leading" constant="8" id="e1s-7p-sAU"/>
+                            <constraint firstAttribute="bottom" secondItem="djc-sU-JDs" secondAttribute="bottom" id="gbh-51-BAI"/>
+                            <constraint firstItem="djc-sU-JDs" firstAttribute="top" secondItem="bpY-v5-V7b" secondAttribute="top" id="gwe-d7-j35"/>
+                            <constraint firstAttribute="trailing" secondItem="djc-sU-JDs" secondAttribute="trailing" constant="8" id="ktJ-Vr-CHI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bpY-v5-V7b" secondAttribute="trailing" constant="8" id="eiM-lu-qVn"/>
+                    <constraint firstAttribute="centerY" secondItem="bpY-v5-V7b" secondAttribute="centerY" id="j0a-us-RAc"/>
+                    <constraint firstItem="bpY-v5-V7b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lb7-yf-UdP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="edtValue" destination="djc-sU-JDs" id="ESx-Tq-uxI"/>
+                <outlet property="valueContainer" destination="bpY-v5-V7b" id="9VV-2k-MKa"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="323"/>
+        </tableViewCell>
+    </objects>
+</document>

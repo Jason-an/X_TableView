@@ -66,6 +66,9 @@
     _effectDic[key]=effect;
 }
 -(void)removeEffect:(id<X_TableViewEffect>)effect{
+    [self removeTableEventWithId:effect];//////
+    
+    
     NSString *key = [NSString stringWithFormat:@"%p",effect];
     [effect onEffectRemove:self];
     [_effectDic removeObjectForKey:key];
@@ -187,8 +190,19 @@
 }
 
 
+
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    [self eventCall:X_TableViewDidLayoutSubviews];
+}
+
+-(void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self eventCall:X_TableViewDidSetFrame];
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self eventCall:XTableViewDidScroll];
+    [self eventCall:X_TableViewDidScroll];
 }
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
@@ -205,9 +219,9 @@
 }
 
 -(void)reloadData{
-    [self eventCall:XTableViewWillReloadData];
+    [self eventCall:X_TableViewWillReloadData];
     [super reloadData];
-    [self eventCall:XTableViewDidReloadData];
+    [self eventCall:X_TableViewDidReloadData];
 }
 
 

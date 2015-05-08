@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00064871AFCB39300151C28 /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647A1AFCB39300151C28 /* NSMutableArray+x.m */; };
+		A00064881AFCB39300151C28 /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647C1AFCB39300151C28 /* X_TableView.m */; };
+		A00064891AFCB39300151C28 /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647D1AFCB39300151C28 /* X_TableViewCell.m */; };
+		A000648A1AFCB39300151C28 /* X_TableViewCellData_Key.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */; };
+		A000648B1AFCB39300151C28 /* X_PulldownRefreshEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */; };
+		A000648C1AFCB39300151C28 /* X_PulldownToSelectEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */; };
+		A000648D1AFCB39300151C28 /* X_PulldownZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */; };
+		A00064901AFCB3F600151C28 /* X_KeybordEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */; };
+		A00064931AFCB45400151C28 /* TextfiledCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064911AFCB45400151C28 /* TextfiledCell.m */; };
+		A00064941AFCB45400151C28 /* TextfiledCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00064921AFCB45400151C28 /* TextfiledCell.xib */; };
+		A00064971AFCB4D600151C28 /* KeybordTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064961AFCB4D600151C28 /* KeybordTestViewController.m */; };
 		A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD7C1AEF9B2C0069FC4D /* RadioCell.m */; };
 		A03CFD811AEF9B2C0069FC4D /* RadioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD7D1AEF9B2C0069FC4D /* RadioCell.xib */; };
 		A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD831AEF9B540069FC4D /* XMLTestViewController.m */; };
@@ -25,14 +36,7 @@
 		A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427841AEA2066003FB2F7 /* MainViewController.xml */; };
 		A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */; };
 		A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */; };
-		A08B6A721AFB076C009FCA7F /* X_PulldownToSelectEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B6A711AFB076C009FCA7F /* X_PulldownToSelectEffect.m */; };
 		A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */; };
-		A0966BE61AF9C2E900D38C85 /* X_TableViewCellData_Key.m in Sources */ = {isa = PBXBuildFile; fileRef = A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */; };
-		A09993A61AF89D240077E60C /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A01AF89D240077E60C /* NSMutableArray+x.m */; };
-		A09993A71AF89D240077E60C /* X_PulldownZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A21AF89D240077E60C /* X_PulldownZoomEffect.m */; };
-		A09993A81AF89D240077E60C /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A41AF89D240077E60C /* X_TableView.m */; };
-		A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A09993A51AF89D240077E60C /* X_TableViewCell.m */; };
-		A0C035581AFA0D8200DD119D /* X_PulldownRefreshEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C035571AFA0D8200DD119D /* X_PulldownRefreshEffect.m */; };
 		A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */; };
 		A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */; };
 		A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1B91AEF56A6009320FE /* BasicCell.m */; };
@@ -46,6 +50,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A00064791AFCB39300151C28 /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
+		A000647A1AFCB39300151C28 /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
+		A000647B1AFCB39300151C28 /* X_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableView.h; sourceTree = "<group>"; };
+		A000647C1AFCB39300151C28 /* X_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableView.m; sourceTree = "<group>"; };
+		A000647D1AFCB39300151C28 /* X_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCell.m; sourceTree = "<group>"; };
+		A000647E1AFCB39300151C28 /* X_TableViewCellData_Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableViewCellData_Key.h; sourceTree = "<group>"; };
+		A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCellData_Key.m; sourceTree = "<group>"; };
+		A00064811AFCB39300151C28 /* X_PulldownRefreshEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownRefreshEffect.h; sourceTree = "<group>"; };
+		A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownRefreshEffect.m; sourceTree = "<group>"; };
+		A00064831AFCB39300151C28 /* X_PulldownToSelectEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownToSelectEffect.h; sourceTree = "<group>"; };
+		A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownToSelectEffect.m; sourceTree = "<group>"; };
+		A00064851AFCB39300151C28 /* X_PulldownZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownZoomEffect.h; sourceTree = "<group>"; };
+		A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownZoomEffect.m; sourceTree = "<group>"; };
+		A000648E1AFCB3F600151C28 /* X_KeybordEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_KeybordEffect.h; sourceTree = "<group>"; };
+		A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_KeybordEffect.m; sourceTree = "<group>"; };
+		A00064911AFCB45400151C28 /* TextfiledCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfiledCell.m; sourceTree = "<group>"; };
+		A00064921AFCB45400151C28 /* TextfiledCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextfiledCell.xib; sourceTree = "<group>"; };
+		A00064951AFCB4D600151C28 /* KeybordTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeybordTestViewController.h; sourceTree = "<group>"; };
+		A00064961AFCB4D600151C28 /* KeybordTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeybordTestViewController.m; sourceTree = "<group>"; };
 		A03CFD7C1AEF9B2C0069FC4D /* RadioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioCell.m; sourceTree = "<group>"; };
 		A03CFD7D1AEF9B2C0069FC4D /* RadioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCell.xib; sourceTree = "<group>"; };
 		A03CFD821AEF9B540069FC4D /* XMLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTestViewController.h; sourceTree = "<group>"; };
@@ -69,21 +92,8 @@
 		A08427861AEA2066003FB2F7 /* PulldownZoomTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownZoomTestViewController.h; sourceTree = "<group>"; };
 		A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownZoomTestViewController.m; sourceTree = "<group>"; };
 		A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PulldownZoomViewController.xml; sourceTree = "<group>"; };
-		A08B6A701AFB076C009FCA7F /* X_PulldownToSelectEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownToSelectEffect.h; sourceTree = "<group>"; };
-		A08B6A711AFB076C009FCA7F /* X_PulldownToSelectEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownToSelectEffect.m; sourceTree = "<group>"; };
 		A08B6A731AFB0935009FCA7F /* PulldownToSelectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownToSelectTestViewController.h; sourceTree = "<group>"; };
 		A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownToSelectTestViewController.m; sourceTree = "<group>"; };
-		A0966BE11AF9C2D200D38C85 /* X_TableViewCellData_Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableViewCellData_Key.h; sourceTree = "<group>"; };
-		A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCellData_Key.m; sourceTree = "<group>"; };
-		A099939F1AF89D240077E60C /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
-		A09993A01AF89D240077E60C /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
-		A09993A11AF89D240077E60C /* X_PulldownZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownZoomEffect.h; sourceTree = "<group>"; };
-		A09993A21AF89D240077E60C /* X_PulldownZoomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownZoomEffect.m; sourceTree = "<group>"; };
-		A09993A31AF89D240077E60C /* X_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableView.h; sourceTree = "<group>"; };
-		A09993A41AF89D240077E60C /* X_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableView.m; sourceTree = "<group>"; };
-		A09993A51AF89D240077E60C /* X_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCell.m; sourceTree = "<group>"; };
-		A0C035561AFA0D8200DD119D /* X_PulldownRefreshEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownRefreshEffect.h; sourceTree = "<group>"; };
-		A0C035571AFA0D8200DD119D /* X_PulldownRefreshEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownRefreshEffect.m; sourceTree = "<group>"; };
 		A0C035591AFA0E8400DD119D /* PulldownRefreshTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownRefreshTestViewController.h; sourceTree = "<group>"; };
 		A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownRefreshTestViewController.m; sourceTree = "<group>"; };
 		A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
@@ -110,6 +120,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00064771AFCB39300151C28 /* X_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A00064781AFCB39300151C28 /* core */,
+				A00064801AFCB39300151C28 /* effect */,
+			);
+			path = X_TableView;
+			sourceTree = "<group>";
+		};
+		A00064781AFCB39300151C28 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A00064791AFCB39300151C28 /* NSMutableArray+x.h */,
+				A000647A1AFCB39300151C28 /* NSMutableArray+x.m */,
+				A000647B1AFCB39300151C28 /* X_TableView.h */,
+				A000647C1AFCB39300151C28 /* X_TableView.m */,
+				A000647D1AFCB39300151C28 /* X_TableViewCell.m */,
+				A000647E1AFCB39300151C28 /* X_TableViewCellData_Key.h */,
+				A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A00064801AFCB39300151C28 /* effect */ = {
+			isa = PBXGroup;
+			children = (
+				A00064811AFCB39300151C28 /* X_PulldownRefreshEffect.h */,
+				A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */,
+				A00064831AFCB39300151C28 /* X_PulldownToSelectEffect.h */,
+				A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */,
+				A00064851AFCB39300151C28 /* X_PulldownZoomEffect.h */,
+				A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */,
+				A000648E1AFCB3F600151C28 /* X_KeybordEffect.h */,
+				A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */,
+			);
+			path = effect;
+			sourceTree = "<group>";
+		};
 		A08427751AEA2066003FB2F7 /* demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,33 +194,17 @@
 				A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */,
 				A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */,
 				A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */,
+				A00064951AFCB4D600151C28 /* KeybordTestViewController.h */,
+				A00064961AFCB4D600151C28 /* KeybordTestViewController.m */,
 			);
 			path = viewController;
-			sourceTree = "<group>";
-		};
-		A099939E1AF89D240077E60C /* X_TableView */ = {
-			isa = PBXGroup;
-			children = (
-				A099939F1AF89D240077E60C /* NSMutableArray+x.h */,
-				A09993A01AF89D240077E60C /* NSMutableArray+x.m */,
-				A09993A11AF89D240077E60C /* X_PulldownZoomEffect.h */,
-				A09993A21AF89D240077E60C /* X_PulldownZoomEffect.m */,
-				A0C035561AFA0D8200DD119D /* X_PulldownRefreshEffect.h */,
-				A0C035571AFA0D8200DD119D /* X_PulldownRefreshEffect.m */,
-				A08B6A701AFB076C009FCA7F /* X_PulldownToSelectEffect.h */,
-				A08B6A711AFB076C009FCA7F /* X_PulldownToSelectEffect.m */,
-				A09993A31AF89D240077E60C /* X_TableView.h */,
-				A09993A41AF89D240077E60C /* X_TableView.m */,
-				A09993A51AF89D240077E60C /* X_TableViewCell.m */,
-				A0966BE11AF9C2D200D38C85 /* X_TableViewCellData_Key.h */,
-				A0966BE51AF9C2E900D38C85 /* X_TableViewCellData_Key.m */,
-			);
-			path = X_TableView;
 			sourceTree = "<group>";
 		};
 		A0FEC1B81AEF56A6009320FE /* custom_cell */ = {
 			isa = PBXGroup;
 			children = (
+				A00064911AFCB45400151C28 /* TextfiledCell.m */,
+				A00064921AFCB45400151C28 /* TextfiledCell.xib */,
 				A03CFD8D1AEFA4490069FC4D /* hello.jpg */,
 				A03CFD891AEFA3200069FC4D /* ImageCell.m */,
 				A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */,
@@ -193,7 +225,7 @@
 		E11C83311AE4B4E700C023B9 = {
 			isa = PBXGroup;
 			children = (
-				A099939E1AF89D240077E60C /* X_TableView */,
+				A00064771AFCB39300151C28 /* X_TableView */,
 				A08427751AEA2066003FB2F7 /* demo */,
 				E11C833B1AE4B4E700C023B9 /* Products */,
 			);
@@ -265,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03CFD8C1AEFA3200069FC4D /* ImageCell.xib in Resources */,
+				A00064941AFCB45400151C28 /* TextfiledCell.xib in Resources */,
 				A0FEC1C81AEF56A6009320FE /* SwitchCell.xib in Resources */,
 				A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */,
 				A03CFD811AEF9B2C0069FC4D /* RadioCell.xib in Resources */,
@@ -288,26 +321,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A09993A81AF89D240077E60C /* X_TableView.m in Sources */,
 				A0FEC1C71AEF56A6009320FE /* SwitchCell.m in Sources */,
 				A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */,
 				A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */,
-				A09993A61AF89D240077E60C /* NSMutableArray+x.m in Sources */,
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
-				A09993A91AF89D240077E60C /* X_TableViewCell.m in Sources */,
+				A000648B1AFCB39300151C28 /* X_PulldownRefreshEffect.m in Sources */,
+				A00064901AFCB3F600151C28 /* X_KeybordEffect.m in Sources */,
 				A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */,
 				A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */,
-				A0966BE61AF9C2E900D38C85 /* X_TableViewCellData_Key.m in Sources */,
+				A00064871AFCB39300151C28 /* NSMutableArray+x.m in Sources */,
+				A000648A1AFCB39300151C28 /* X_TableViewCellData_Key.m in Sources */,
+				A00064891AFCB39300151C28 /* X_TableViewCell.m in Sources */,
+				A00064881AFCB39300151C28 /* X_TableView.m in Sources */,
+				A00064971AFCB4D600151C28 /* KeybordTestViewController.m in Sources */,
 				A0FEC1C51AEF56A6009320FE /* NoneCell.m in Sources */,
 				A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */,
 				A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */,
-				A09993A71AF89D240077E60C /* X_PulldownZoomEffect.m in Sources */,
+				A000648D1AFCB39300151C28 /* X_PulldownZoomEffect.m in Sources */,
 				A084279E1AEA2066003FB2F7 /* main.m in Sources */,
-				A08B6A721AFB076C009FCA7F /* X_PulldownToSelectEffect.m in Sources */,
 				A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */,
 				A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */,
+				A00064931AFCB45400151C28 /* TextfiledCell.m in Sources */,
 				A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */,
-				A0C035581AFA0D8200DD119D /* X_PulldownRefreshEffect.m in Sources */,
+				A000648C1AFCB39300151C28 /* X_PulldownToSelectEffect.m in Sources */,
 				A0FEC1C31AEF56A6009320FE /* LineCell.m in Sources */,
 				A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */,
 			);

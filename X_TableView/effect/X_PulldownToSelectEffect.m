@@ -20,14 +20,13 @@
 -(void)onEffectAdd:(X_TableView *)xTableView{
     
     [xTableView insertSubview:_view atIndex:0];
-    [xTableView addTableEventListenerWithId:self name:XTableViewDidScroll block:^{
+    [xTableView addTableEventListenerWithId:self name:X_TableViewDidScroll block:^{
         
     }];
 }
 
 -(void)onEffectRemove:(X_TableView *)xTableView{
     [_view removeFromSuperview];
-    [xTableView removeTableEventWithId:self];
 }
 
 

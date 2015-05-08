@@ -1,5 +1,6 @@
 <table>
-    
+    <basic text="键盘" didSeclect="push" viewController="KeybordTestViewController"/>
+    <line/>
     <basic text="删除" didSeclect="push" viewController="EditViewController">
     <line/>
     <basic text="下拉选择" didSeclect = "push" viewController="PulldownToSelectTestViewController"/>
