@@ -129,8 +129,6 @@
         cell.xTableView = self;
     }
     cell.cellData = cellData;
-    cell.index = indexPath.row;
-    cell.indexPath = indexPath;
     [cell update];
     return cell;
 }
@@ -178,8 +176,6 @@
     }
     
     cell.cellData = [[NSMutableDictionary alloc] initWithDictionary:cellData];
-    cell.index = indexPath.row;
-    cell.indexPath = indexPath;
     [cell update];
     return [cell getCellHeight];
 }

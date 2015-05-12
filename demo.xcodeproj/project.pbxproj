@@ -30,7 +30,6 @@
 		A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427771AEA2066003FB2F7 /* AppDelegate.m */; };
 		A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08427781AEA2066003FB2F7 /* LaunchScreen.xib */; };
 		A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A084277F1AEA2066003FB2F7 /* Images.xcassets */; };
-		A084279D1AEA2066003FB2F7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A08427801AEA2066003FB2F7 /* Info.plist */; };
 		A084279E1AEA2066003FB2F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427811AEA2066003FB2F7 /* main.m */; };
 		A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427831AEA2066003FB2F7 /* MainViewController.m */; };
 		A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427841AEA2066003FB2F7 /* MainViewController.xml */; };
@@ -265,7 +264,7 @@
 		E11C83321AE4B4E700C023B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = zsbrother;
 				TargetAttributes = {
 					E11C83391AE4B4E700C023B9 = {
@@ -307,7 +306,6 @@
 				A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */,
 				A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */,
 				A03CFD861AEF9B540069FC4D /* RadioTest.xml in Resources */,
-				A084279D1AEA2066003FB2F7 /* Info.plist in Resources */,
 				A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */,
 				A03CFD8E1AEFA4490069FC4D /* hello.jpg in Resources */,
 				A03CFD881AEFA1E00069FC4D /* SwitchTest.xml in Resources */,
