@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "X_TableView"
-  s.version      = "0.1"
+  s.version      = "0.11"
   s.summary      = "xib cell"
   s.homepage     = "https://github.com/fc01"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
