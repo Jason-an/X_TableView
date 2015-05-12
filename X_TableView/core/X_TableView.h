@@ -14,6 +14,7 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 };
 
 @class X_TableView;
+@class X_TableViewCell;
 
 @protocol X_TableViewEffect<NSObject>
 -(void)onEffectAdd:(X_TableView *)xTableView;
@@ -35,8 +36,8 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 -(void)addTableEventListenerWithId:(id)Id name:(X_TableViewEvent)name block:(void(^)())block;
 
 //cell event
--(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block;
--(void)dispatchCellEventWithName:(NSString *)name data:(NSMutableDictionary*)data;
+-(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(X_TableViewCell* cell))block;
+-(void)dispatchCellEventWithName:(NSString *)name data:(X_TableViewCell*)data;
 -(void)removeAllCellEvent;
 
 //other event
@@ -53,6 +54,7 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 @interface X_TableViewCell : UITableViewCell
 @property(nonatomic,weak) X_TableView *xTableView;
 @property(nonatomic) NSMutableDictionary *cellData;
+@property(nonatomic) NSInteger index;
 -(void)xibDidLoad;
 -(void)update;
 -(void)didSelect;

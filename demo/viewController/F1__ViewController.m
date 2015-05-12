@@ -27,12 +27,12 @@
     X_TableView *tbv = [X_TableView new];
     tbv.xDataSource = arr;
 
-    [tbv addCellEventListenerWithName:@"liyingying" block:^(NSMutableDictionary *cellData) {
+    [tbv addCellEventListenerWithName:@"liyingying" block:^(X_TableViewCell *cell) {
         NSLog(@"123123123");
        // [self.navigationController popToRootViewControllerAnimated:YES];
     }];
-    [tbv addCellEventListenerWithName:@"f1" block:^(NSMutableDictionary *cellData) {
-        NSLog(@"cellData=%@",cellData);
+    [tbv addCellEventListenerWithName:@"f1" block:^(X_TableViewCell *cell) {
+        NSLog(@"cellData=%@",cell.cellData);
     }];
     
     self.view = tbv;

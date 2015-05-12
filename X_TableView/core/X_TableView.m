@@ -25,6 +25,15 @@
 -(void)setDelegate:(id <UITableViewDelegate>)delegate{
 }
 
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if(self){
+        [self init2];
+    }
+    return self;
+}
+
 -(id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
     self = [super initWithFrame:frame style:style];
     if (self) {
@@ -79,11 +88,11 @@
 }
 
 
--(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(NSMutableDictionary* cellData))block{
+-(void)addCellEventListenerWithName:(NSString*)name block:(void (^)(X_TableViewCell* cell))block{
     _blockDic[name]=block;
 }
 
--(void)dispatchCellEventWithName:(NSString *)name data:(NSMutableDictionary*)data{
+-(void)dispatchCellEventWithName:(NSString *)name data:(X_TableViewCell*)data{
     void(^callBack)(id)=_blockDic[name];
     
     if (callBack!=nil) {
@@ -107,10 +116,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [self getCellWithTableView:tableView
-                              tagName:_xDataSource[indexPath.row][kCellTag]
-                             cellData:_xDataSource[indexPath.row]
-            ];
+    
+    
+    NSMutableDictionary* cellData = _xDataSource[indexPath.row];
+    NSString* tagName = cellData[kCellTag];
+    
+    NSString* cellName = [self getCellNameWithTagName:tagName];
+    X_TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellName];
+    if(!cell){
+        cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
+        [cell xibDidLoad];
+        cell.xTableView = self;
+    }
+    cell.cellData = cellData;
+    cell.index = indexPath.row;
+    [cell update];
+    return cell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
@@ -132,22 +153,13 @@
     return [NSString stringWithFormat:@"%@%@Cell",ch,str];
 }
 
-- (X_TableViewCell*)getCellWithTableView:(UITableView*)tbv tagName:(NSString*)tagName cellData:(NSMutableDictionary*)dic{
-    
-    NSString* cellName = [self getCellNameWithTagName:tagName];
-    X_TableViewCell* cell = [tbv dequeueReusableCellWithIdentifier:cellName];
-    if(!cell){
-        cell = [[[NSBundle mainBundle] loadNibNamed:cellName owner:nil options:nil]firstObject];
-        [cell xibDidLoad];
-        cell.xTableView = self;
-    }
-    cell.cellData = dic;
-    [cell update];
-    return cell;
-}
 
 
-- (CGFloat)getCellHeightWithTagName:(NSString*)tagName andCellData:(NSMutableDictionary*)dic{
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSMutableDictionary* cellData = _xDataSource[indexPath.row];
+    NSString* tagName = cellData[kCellTag];
     
     NSString* cellName = [self getCellNameWithTagName:tagName];
     static NSMutableDictionary *cellDic = nil;
@@ -164,17 +176,10 @@
         cellDic[cellName] = cell;
     }
     
-    cell.cellData = [[NSMutableDictionary alloc] initWithDictionary:dic];
+    cell.cellData = [[NSMutableDictionary alloc] initWithDictionary:cellData];
+    cell.index = indexPath.row;
     [cell update];
     return [cell getCellHeight];
-}
-
-
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return [self getCellHeightWithTagName:_xDataSource[indexPath.row][kCellTag] andCellData:_xDataSource[indexPath.row]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -15,16 +15,16 @@
     
     __weak MainViewController *weakSelf = self;
     
-    [tbv addCellEventListenerWithName:@"push" block:^(NSMutableDictionary *cellData) {
-        UIViewController *vc = [[NSClassFromString(cellData[@"viewController"]) alloc] init];
+    [tbv addCellEventListenerWithName:@"push" block:^(X_TableViewCell *cell) {
+        UIViewController *vc = [NSClassFromString(cell.cellData[@"viewController"]) new];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     
     
-    [tbv addCellEventListenerWithName:@"onPushTest" block:^(NSMutableDictionary *cellData) {
+    [tbv addCellEventListenerWithName:@"onPushTest" block:^(X_TableViewCell *cell) {
         XMLTestViewController *vc = [XMLTestViewController new];
-        vc.title = cellData[kCellText];
-        vc.filename = cellData[@"filename"];
+        vc.title = cell.cellData[kCellText];
+        vc.filename = cell.cellData[@"filename"];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     

@@ -20,7 +20,7 @@
 }
 
 -(void)dispatchCellEventWithName:(NSString *)name{
-    [self.xTableView dispatchCellEventWithName:name data:self.cellData];
+    [self.xTableView dispatchCellEventWithName:name data:self];
 }
 
 @end
