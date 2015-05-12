@@ -55,6 +55,7 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 @property(nonatomic,weak) X_TableView *xTableView;
 @property(nonatomic) NSMutableDictionary *cellData;
 @property(nonatomic) NSInteger index;
+@property(nonatomic) NSIndexPath *indexPath;
 -(void)xibDidLoad;
 -(void)update;
 -(void)didSelect;
