@@ -64,13 +64,13 @@
 
 @implementation NSMutableArray(x)
 
-+ (NSMutableArray *)x_ArrayWithXmlFile:(NSString*)filename{
++ (instancetype)x_ArrayWithXmlFile:(NSString*)filename{
     return [X_XMLDataSource xmlDataSourceWithFileName:filename];
 }
 
 
 
--(NSMutableArray*)x_select:(NSString*)str where:(NSDictionary*)dic{
+-(instancetype)x_select:(NSString*)str where:(NSDictionary*)dic{
     
     NSMutableArray* arr=[NSMutableArray new];
     
