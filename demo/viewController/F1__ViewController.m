@@ -1,5 +1,6 @@
 #import "F1__ViewController.h"
-#import "X_TableView.h"
+
+
 @implementation F1__ViewController
 
 
@@ -24,18 +25,17 @@
         }
     }
     
-    X_TableView *tbv = [X_TableView new];
-    tbv.xDataSource = arr;
+    
+    self.xTableView.xDataSource = arr;
 
-    [tbv addCellEventListenerWithName:@"liyingying" block:^(X_TableViewCell *cell) {
+    [self.xTableView addCellEventListenerWithName:@"liyingying" block:^(X_TableViewCell *cell) {
         NSLog(@"123123123");
        // [self.navigationController popToRootViewControllerAnimated:YES];
     }];
-    [tbv addCellEventListenerWithName:@"f1" block:^(X_TableViewCell *cell) {
+    [self.xTableView addCellEventListenerWithName:@"f1" block:^(X_TableViewCell *cell) {
         NSLog(@"cellData=%@",cell.cellData);
     }];
     
-    self.view = tbv;
 }
 
 

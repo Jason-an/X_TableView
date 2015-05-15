@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "X_TableView.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : X_TableViewController
 
 @end

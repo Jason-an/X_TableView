@@ -50,6 +50,10 @@ typedef NS_ENUM(NSUInteger, X_TableViewEvent) {
 
 @end
 
+@interface X_TableViewController : UIViewController
+@property(nonatomic)X_TableView* xTableView;
+@end
+
 
 @interface X_TableViewCell : UITableViewCell
 @property(nonatomic,weak) X_TableView *xTableView;

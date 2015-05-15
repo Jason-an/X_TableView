@@ -1,5 +1,4 @@
 #import "PulldownZoomTestViewController.h"
-#import "X_TableView.h"
 #import "X_PulldownZoomEffect.h"
 
 @implementation PulldownZoomTestViewController
@@ -8,11 +7,9 @@
     [super viewDidLoad];
     self.title=@"pulldown zoom";
     
-    X_TableView *tbv = [X_TableView new];
-    tbv.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"PulldownZoomViewController.xml"];
-    [tbv addEffect:[X_PulldownZoomEffect new]];
+    self.xTableView.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"PulldownZoomViewController.xml"];
+    [self.xTableView addEffect:[X_PulldownZoomEffect new]];
     
-    self.view = tbv;
 }
 
 
