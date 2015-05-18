@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "X_TableView.h"
 
-@interface PulldownRefreshTestViewController : UIViewController
+@interface PulldownRefreshTestViewController : X_TableViewController
 
 @end

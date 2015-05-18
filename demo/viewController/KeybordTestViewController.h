@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "X_TableView.h"
 
-@interface KeybordTestViewController : UIViewController
+@interface KeybordTestViewController : X_TableViewController
 
 @end

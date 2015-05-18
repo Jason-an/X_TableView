@@ -40,6 +40,7 @@
 		A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */; };
 		A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */; };
 		A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */; };
+		A0DFFEC71B05B02700970F9B /* X_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DFFEC61B05B02700970F9B /* X_TableViewController.m */; };
 		A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1B91AEF56A6009320FE /* BasicCell.m */; };
 		A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FEC1BA1AEF56A6009320FE /* BasicCell.xib */; };
 		A0FEC1C31AEF56A6009320FE /* LineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC1BB1AEF56A6009320FE /* LineCell.m */; };
@@ -102,6 +103,7 @@
 		A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownRefreshTestViewController.m; sourceTree = "<group>"; };
 		A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		A0DFFEC61B05B02700970F9B /* X_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewController.m; sourceTree = "<group>"; };
 		A0FEC1B91AEF56A6009320FE /* BasicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCell.m; sourceTree = "<group>"; };
 		A0FEC1BA1AEF56A6009320FE /* BasicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 		A0FEC1BB1AEF56A6009320FE /* LineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCell.m; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				A000647A1AFCB39300151C28 /* NSMutableArray+x.m */,
 				A000647B1AFCB39300151C28 /* X_TableView.h */,
 				A000647C1AFCB39300151C28 /* X_TableView.m */,
+				A0DFFEC61B05B02700970F9B /* X_TableViewController.m */,
 				A000647D1AFCB39300151C28 /* X_TableViewCell.m */,
 				A000647E1AFCB39300151C28 /* X_TableViewCellData_Key.h */,
 				A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */,
@@ -347,6 +350,7 @@
 				A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */,
 				A000648D1AFCB39300151C28 /* X_PulldownZoomEffect.m in Sources */,
 				A084279E1AEA2066003FB2F7 /* main.m in Sources */,
+				A0DFFEC71B05B02700970F9B /* X_TableViewController.m in Sources */,
 				A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */,
 				A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */,
 				A00064931AFCB45400151C28 /* TextfiledCell.m in Sources */,

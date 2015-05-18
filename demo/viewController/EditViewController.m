@@ -1,5 +1,4 @@
 #import "EditViewController.h"
-#import "X_TableView.h"
 
 @interface EditViewController ()
 
@@ -16,12 +15,11 @@
                            ]mutableCopy];
     
     
-    X_TableView *tbv = [X_TableView new];
-    tbv.xDataSource = arr;
+    self.xTableView.xDataSource = arr;
     
-    __weak X_TableView* weakTb = tbv;
+    __weak X_TableView* weakTb = self.xTableView;
     
-    [tbv addCommitEditingEventWithBlock:^(UITableViewCellEditingStyle style, NSInteger index) {
+    [self.xTableView addCommitEditingEventWithBlock:^(UITableViewCellEditingStyle style, NSInteger index) {
         [weakTb.xDataSource removeObjectAtIndex:index];
         
         
@@ -30,8 +28,6 @@
 
     }];
     
-    
-    self.view = tbv;
 }
 
 

@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "X_TableView.h"
 
-@interface XMLTestViewController : UIViewController
+@interface XMLTestViewController : X_TableViewController
 @property(nonatomic)NSString* filename;
 @end

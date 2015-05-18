@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "X_TableView.h"
 
-@interface EditViewController : UIViewController
+@interface EditViewController : X_TableViewController
 
 @end
