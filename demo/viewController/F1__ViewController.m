@@ -7,7 +7,26 @@
     [super viewDidLoad];
     
     
+    X_TableView *tbv = [X_TableView new];
+    
     NSMutableArray *arr=[NSMutableArray new];
+    
+    
+    [arr addObject:[@{
+                      kCellTag:@"TestCell",
+                      @"test":@"hasdihfiuahsdfiuh",
+                      kCellDidSelect:@"123",
+                      } mutableCopy]];
+    [tbv addCellEventListenerWithName:@"test2" block:^(X_TableViewCell *cell) {
+        
+    }];
+    [tbv addCellEventListenerWithName:@"testTouch" block:^(X_TableViewCell *cell) {
+        NSLog(@"%@",cell.cellData);
+    }];
+    
+    [tbv addCellEventListenerWithName:@"123" block:^(X_TableViewCell *cell) {
+        NSLog(@"%@",cell.cellData);
+    }];
     
     for (int i=0; i<30; i++) {
         [arr addObject:[@{
@@ -24,7 +43,7 @@
         }
     }
     
-    X_TableView *tbv = [X_TableView new];
+
     tbv.xDataSource = arr;
 
     [tbv addCellEventListenerWithName:@"liyingying" block:^(X_TableViewCell *cell) {

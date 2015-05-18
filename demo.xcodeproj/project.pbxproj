@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AA0F0EE1B04436B0037187B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0F0EC1B04436B0037187B /* TestCell.m */; };
+		8AA0F0EF1B04436B0037187B /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0F0ED1B04436B0037187B /* TestCell.xib */; };
 		A00064871AFCB39300151C28 /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647A1AFCB39300151C28 /* NSMutableArray+x.m */; };
 		A00064881AFCB39300151C28 /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647C1AFCB39300151C28 /* X_TableView.m */; };
 		A00064891AFCB39300151C28 /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647D1AFCB39300151C28 /* X_TableViewCell.m */; };
@@ -49,6 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AA0F0EB1B04436B0037187B /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		8AA0F0EC1B04436B0037187B /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		8AA0F0ED1B04436B0037187B /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		A00064791AFCB39300151C28 /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
 		A000647A1AFCB39300151C28 /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
 		A000647B1AFCB39300151C28 /* X_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableView.h; sourceTree = "<group>"; };
@@ -195,6 +200,9 @@
 				A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */,
 				A00064951AFCB4D600151C28 /* KeybordTestViewController.h */,
 				A00064961AFCB4D600151C28 /* KeybordTestViewController.m */,
+				8AA0F0EB1B04436B0037187B /* TestCell.h */,
+				8AA0F0EC1B04436B0037187B /* TestCell.m */,
+				8AA0F0ED1B04436B0037187B /* TestCell.xib */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */,
 				A0FEC1C41AEF56A6009320FE /* LineCell.xib in Resources */,
 				A0FEC1C61AEF56A6009320FE /* NoneCell.xib in Resources */,
+				8AA0F0EF1B04436B0037187B /* TestCell.xib in Resources */,
 				A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */,
 				A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */,
 				A03CFD861AEF9B540069FC4D /* RadioTest.xml in Resources */,
@@ -324,6 +333,7 @@
 				A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */,
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
 				A000648B1AFCB39300151C28 /* X_PulldownRefreshEffect.m in Sources */,
+				8AA0F0EE1B04436B0037187B /* TestCell.m in Sources */,
 				A00064901AFCB3F600151C28 /* X_KeybordEffect.m in Sources */,
 				A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */,
 				A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */,
