@@ -146,8 +146,7 @@
     
     NSString *ch = [[tagName substringToIndex:1] uppercaseString];
     NSString *str = [tagName substringFromIndex:1];
-    NSArray * strs = [str componentsSeparatedByString:@"Cell"];
-    if ([strs count]>1) {
+    if ([str containsString:@"Cell"]) {
         return [NSString stringWithFormat:@"%@%@",ch,str];
     }
     return [NSString stringWithFormat:@"%@%@Cell",ch,str];
