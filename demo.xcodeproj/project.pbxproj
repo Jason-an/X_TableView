@@ -7,37 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AA0F0EE1B04436B0037187B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0F0EC1B04436B0037187B /* TestCell.m */; };
-		8AA0F0EF1B04436B0037187B /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA0F0ED1B04436B0037187B /* TestCell.xib */; };
 		A00064871AFCB39300151C28 /* NSMutableArray+x.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647A1AFCB39300151C28 /* NSMutableArray+x.m */; };
 		A00064881AFCB39300151C28 /* X_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647C1AFCB39300151C28 /* X_TableView.m */; };
 		A00064891AFCB39300151C28 /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647D1AFCB39300151C28 /* X_TableViewCell.m */; };
 		A000648A1AFCB39300151C28 /* X_TableViewCellData_Key.m in Sources */ = {isa = PBXBuildFile; fileRef = A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */; };
 		A000648B1AFCB39300151C28 /* X_PulldownRefreshEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */; };
-		A000648C1AFCB39300151C28 /* X_PulldownToSelectEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */; };
 		A000648D1AFCB39300151C28 /* X_PulldownZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */; };
-		A00064901AFCB3F600151C28 /* X_KeybordEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */; };
 		A00064931AFCB45400151C28 /* TextfiledCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064911AFCB45400151C28 /* TextfiledCell.m */; };
 		A00064941AFCB45400151C28 /* TextfiledCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00064921AFCB45400151C28 /* TextfiledCell.xib */; };
-		A00064971AFCB4D600151C28 /* KeybordTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00064961AFCB4D600151C28 /* KeybordTestViewController.m */; };
 		A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD7C1AEF9B2C0069FC4D /* RadioCell.m */; };
 		A03CFD811AEF9B2C0069FC4D /* RadioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD7D1AEF9B2C0069FC4D /* RadioCell.xib */; };
 		A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD831AEF9B540069FC4D /* XMLTestViewController.m */; };
-		A03CFD861AEF9B540069FC4D /* RadioTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD841AEF9B540069FC4D /* RadioTest.xml */; };
-		A03CFD881AEFA1E00069FC4D /* SwitchTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD871AEFA1E00069FC4D /* SwitchTest.xml */; };
+		A03CFD861AEF9B540069FC4D /* test_data.xml in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD841AEF9B540069FC4D /* test_data.xml */; };
 		A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03CFD891AEFA3200069FC4D /* ImageCell.m */; };
 		A03CFD8C1AEFA3200069FC4D /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */; };
 		A03CFD8E1AEFA4490069FC4D /* hello.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03CFD8D1AEFA4490069FC4D /* hello.jpg */; };
-		A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */; };
 		A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427771AEA2066003FB2F7 /* AppDelegate.m */; };
 		A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08427781AEA2066003FB2F7 /* LaunchScreen.xib */; };
 		A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A084277F1AEA2066003FB2F7 /* Images.xcassets */; };
 		A084279E1AEA2066003FB2F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427811AEA2066003FB2F7 /* main.m */; };
 		A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427831AEA2066003FB2F7 /* MainViewController.m */; };
-		A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427841AEA2066003FB2F7 /* MainViewController.xml */; };
-		A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */; };
-		A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */; };
-		A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */; };
+		A08427A01AEA2066003FB2F7 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = A08427841AEA2066003FB2F7 /* data.xml */; };
 		A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */; };
 		A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */; };
 		A0DFFEC71B05B02700970F9B /* X_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DFFEC61B05B02700970F9B /* X_TableViewController.m */; };
@@ -52,9 +42,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8AA0F0EB1B04436B0037187B /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
-		8AA0F0EC1B04436B0037187B /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
-		8AA0F0ED1B04436B0037187B /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		A00064791AFCB39300151C28 /* NSMutableArray+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+x.h"; sourceTree = "<group>"; };
 		A000647A1AFCB39300151C28 /* NSMutableArray+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+x.m"; sourceTree = "<group>"; };
 		A000647B1AFCB39300151C28 /* X_TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_TableView.h; sourceTree = "<group>"; };
@@ -64,27 +51,18 @@
 		A000647F1AFCB39300151C28 /* X_TableViewCellData_Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_TableViewCellData_Key.m; sourceTree = "<group>"; };
 		A00064811AFCB39300151C28 /* X_PulldownRefreshEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownRefreshEffect.h; sourceTree = "<group>"; };
 		A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownRefreshEffect.m; sourceTree = "<group>"; };
-		A00064831AFCB39300151C28 /* X_PulldownToSelectEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownToSelectEffect.h; sourceTree = "<group>"; };
-		A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownToSelectEffect.m; sourceTree = "<group>"; };
 		A00064851AFCB39300151C28 /* X_PulldownZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_PulldownZoomEffect.h; sourceTree = "<group>"; };
 		A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_PulldownZoomEffect.m; sourceTree = "<group>"; };
-		A000648E1AFCB3F600151C28 /* X_KeybordEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_KeybordEffect.h; sourceTree = "<group>"; };
-		A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_KeybordEffect.m; sourceTree = "<group>"; };
 		A00064911AFCB45400151C28 /* TextfiledCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfiledCell.m; sourceTree = "<group>"; };
 		A00064921AFCB45400151C28 /* TextfiledCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextfiledCell.xib; sourceTree = "<group>"; };
-		A00064951AFCB4D600151C28 /* KeybordTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeybordTestViewController.h; sourceTree = "<group>"; };
-		A00064961AFCB4D600151C28 /* KeybordTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeybordTestViewController.m; sourceTree = "<group>"; };
 		A03CFD7C1AEF9B2C0069FC4D /* RadioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioCell.m; sourceTree = "<group>"; };
 		A03CFD7D1AEF9B2C0069FC4D /* RadioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCell.xib; sourceTree = "<group>"; };
 		A03CFD821AEF9B540069FC4D /* XMLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTestViewController.h; sourceTree = "<group>"; };
 		A03CFD831AEF9B540069FC4D /* XMLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLTestViewController.m; sourceTree = "<group>"; };
-		A03CFD841AEF9B540069FC4D /* RadioTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RadioTest.xml; sourceTree = "<group>"; };
-		A03CFD871AEFA1E00069FC4D /* SwitchTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SwitchTest.xml; sourceTree = "<group>"; };
+		A03CFD841AEF9B540069FC4D /* test_data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_data.xml; sourceTree = "<group>"; };
 		A03CFD891AEFA3200069FC4D /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		A03CFD8A1AEFA3200069FC4D /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		A03CFD8D1AEFA4490069FC4D /* hello.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hello.jpg; sourceTree = "<group>"; };
-		A0840A9B1AF8A14B00696B83 /* F1__ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F1__ViewController.h; sourceTree = "<group>"; };
-		A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F1__ViewController.m; sourceTree = "<group>"; };
 		A08427761AEA2066003FB2F7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A08427771AEA2066003FB2F7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A08427791AEA2066003FB2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -93,12 +71,7 @@
 		A08427811AEA2066003FB2F7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A08427821AEA2066003FB2F7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A08427831AEA2066003FB2F7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		A08427841AEA2066003FB2F7 /* MainViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MainViewController.xml; sourceTree = "<group>"; };
-		A08427861AEA2066003FB2F7 /* PulldownZoomTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownZoomTestViewController.h; sourceTree = "<group>"; };
-		A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownZoomTestViewController.m; sourceTree = "<group>"; };
-		A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PulldownZoomViewController.xml; sourceTree = "<group>"; };
-		A08B6A731AFB0935009FCA7F /* PulldownToSelectTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownToSelectTestViewController.h; sourceTree = "<group>"; };
-		A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownToSelectTestViewController.m; sourceTree = "<group>"; };
+		A08427841AEA2066003FB2F7 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
 		A0C035591AFA0E8400DD119D /* PulldownRefreshTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownRefreshTestViewController.h; sourceTree = "<group>"; };
 		A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownRefreshTestViewController.m; sourceTree = "<group>"; };
 		A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
@@ -155,12 +128,8 @@
 			children = (
 				A00064811AFCB39300151C28 /* X_PulldownRefreshEffect.h */,
 				A00064821AFCB39300151C28 /* X_PulldownRefreshEffect.m */,
-				A00064831AFCB39300151C28 /* X_PulldownToSelectEffect.h */,
-				A00064841AFCB39300151C28 /* X_PulldownToSelectEffect.m */,
 				A00064851AFCB39300151C28 /* X_PulldownZoomEffect.h */,
 				A00064861AFCB39300151C28 /* X_PulldownZoomEffect.m */,
-				A000648E1AFCB3F600151C28 /* X_KeybordEffect.h */,
-				A000648F1AFCB3F600151C28 /* X_KeybordEffect.m */,
 			);
 			path = effect;
 			sourceTree = "<group>";
@@ -177,7 +146,7 @@
 				A08427811AEA2066003FB2F7 /* main.m */,
 				A08427821AEA2066003FB2F7 /* MainViewController.h */,
 				A08427831AEA2066003FB2F7 /* MainViewController.m */,
-				A08427841AEA2066003FB2F7 /* MainViewController.xml */,
+				A08427841AEA2066003FB2F7 /* data.xml */,
 				A08427851AEA2066003FB2F7 /* viewController */,
 			);
 			path = demo;
@@ -188,24 +157,11 @@
 			children = (
 				A03CFD821AEF9B540069FC4D /* XMLTestViewController.h */,
 				A03CFD831AEF9B540069FC4D /* XMLTestViewController.m */,
-				A03CFD841AEF9B540069FC4D /* RadioTest.xml */,
-				A03CFD871AEFA1E00069FC4D /* SwitchTest.xml */,
-				A08427861AEA2066003FB2F7 /* PulldownZoomTestViewController.h */,
-				A08427871AEA2066003FB2F7 /* PulldownZoomTestViewController.m */,
-				A08427881AEA2066003FB2F7 /* PulldownZoomViewController.xml */,
-				A0840A9B1AF8A14B00696B83 /* F1__ViewController.h */,
-				A0840A9C1AF8A14B00696B83 /* F1__ViewController.m */,
+				A03CFD841AEF9B540069FC4D /* test_data.xml */,
 				A0C035591AFA0E8400DD119D /* PulldownRefreshTestViewController.h */,
 				A0C0355A1AFA0E8400DD119D /* PulldownRefreshTestViewController.m */,
-				A08B6A731AFB0935009FCA7F /* PulldownToSelectTestViewController.h */,
-				A08B6A741AFB0935009FCA7F /* PulldownToSelectTestViewController.m */,
 				A0C2B7681AFC8A7300CC7FDE /* EditViewController.h */,
 				A0C2B7691AFC8A7300CC7FDE /* EditViewController.m */,
-				A00064951AFCB4D600151C28 /* KeybordTestViewController.h */,
-				A00064961AFCB4D600151C28 /* KeybordTestViewController.m */,
-				8AA0F0EB1B04436B0037187B /* TestCell.h */,
-				8AA0F0EC1B04436B0037187B /* TestCell.m */,
-				8AA0F0ED1B04436B0037187B /* TestCell.xib */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -309,18 +265,15 @@
 				A03CFD8C1AEFA3200069FC4D /* ImageCell.xib in Resources */,
 				A00064941AFCB45400151C28 /* TextfiledCell.xib in Resources */,
 				A0FEC1C81AEF56A6009320FE /* SwitchCell.xib in Resources */,
-				A08427A21AEA2066003FB2F7 /* PulldownZoomViewController.xml in Resources */,
 				A03CFD811AEF9B2C0069FC4D /* RadioCell.xib in Resources */,
 				A084279C1AEA2066003FB2F7 /* Images.xcassets in Resources */,
 				A0FEC1C41AEF56A6009320FE /* LineCell.xib in Resources */,
 				A0FEC1C61AEF56A6009320FE /* NoneCell.xib in Resources */,
-				8AA0F0EF1B04436B0037187B /* TestCell.xib in Resources */,
 				A0FEC1C21AEF56A6009320FE /* BasicCell.xib in Resources */,
 				A08427971AEA2066003FB2F7 /* LaunchScreen.xib in Resources */,
-				A03CFD861AEF9B540069FC4D /* RadioTest.xml in Resources */,
-				A08427A01AEA2066003FB2F7 /* MainViewController.xml in Resources */,
+				A03CFD861AEF9B540069FC4D /* test_data.xml in Resources */,
+				A08427A01AEA2066003FB2F7 /* data.xml in Resources */,
 				A03CFD8E1AEFA4490069FC4D /* hello.jpg in Resources */,
-				A03CFD881AEFA1E00069FC4D /* SwitchTest.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,18 +286,14 @@
 			files = (
 				A0FEC1C71AEF56A6009320FE /* SwitchCell.m in Sources */,
 				A03CFD851AEF9B540069FC4D /* XMLTestViewController.m in Sources */,
-				A0840A9D1AF8A14B00696B83 /* F1__ViewController.m in Sources */,
 				A03CFD801AEF9B2C0069FC4D /* RadioCell.m in Sources */,
 				A000648B1AFCB39300151C28 /* X_PulldownRefreshEffect.m in Sources */,
-				8AA0F0EE1B04436B0037187B /* TestCell.m in Sources */,
-				A00064901AFCB3F600151C28 /* X_KeybordEffect.m in Sources */,
 				A084279F1AEA2066003FB2F7 /* MainViewController.m in Sources */,
 				A0C2B76A1AFC8A7300CC7FDE /* EditViewController.m in Sources */,
 				A00064871AFCB39300151C28 /* NSMutableArray+x.m in Sources */,
 				A000648A1AFCB39300151C28 /* X_TableViewCellData_Key.m in Sources */,
 				A00064891AFCB39300151C28 /* X_TableViewCell.m in Sources */,
 				A00064881AFCB39300151C28 /* X_TableView.m in Sources */,
-				A00064971AFCB4D600151C28 /* KeybordTestViewController.m in Sources */,
 				A0FEC1C51AEF56A6009320FE /* NoneCell.m in Sources */,
 				A03CFD8B1AEFA3200069FC4D /* ImageCell.m in Sources */,
 				A08427961AEA2066003FB2F7 /* AppDelegate.m in Sources */,
@@ -352,10 +301,7 @@
 				A084279E1AEA2066003FB2F7 /* main.m in Sources */,
 				A0DFFEC71B05B02700970F9B /* X_TableViewController.m in Sources */,
 				A0FEC1C11AEF56A6009320FE /* BasicCell.m in Sources */,
-				A08B6A751AFB0935009FCA7F /* PulldownToSelectTestViewController.m in Sources */,
 				A00064931AFCB45400151C28 /* TextfiledCell.m in Sources */,
-				A08427A11AEA2066003FB2F7 /* PulldownZoomTestViewController.m in Sources */,
-				A000648C1AFCB39300151C28 /* X_PulldownToSelectEffect.m in Sources */,
 				A0FEC1C31AEF56A6009320FE /* LineCell.m in Sources */,
 				A0C0355B1AFA0E8400DD119D /* PulldownRefreshTestViewController.m in Sources */,
 			);

@@ -7,22 +7,17 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.title=@"demo";
     
-    self.xTableView.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"MainViewController.xml"];
+    self.title=@"demo";
     
     __weak MainViewController *weakSelf = self;
     
+    
+    self.xTableView.xDataSource = [NSMutableArray x_ArrayWithXmlFile:@"data.xml"];
+    
     [self.xTableView addCellEventListenerWithName:@"push" block:^(X_TableViewCell *cell) {
-        UIViewController *vc = [NSClassFromString(cell.cellData[@"viewController"]) new];
-        [weakSelf.navigationController pushViewController:vc animated:YES];
-    }];
-    
-    
-    [self.xTableView addCellEventListenerWithName:@"onPushTest" block:^(X_TableViewCell *cell) {
-        XMLTestViewController *vc = [XMLTestViewController new];
-        vc.title = cell.cellData[kCellText];
-        vc.filename = cell.cellData[@"filename"];
+        NSString *className = cell.cellData[@"viewController"];
+        UIViewController *vc = [NSClassFromString(className) new];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     

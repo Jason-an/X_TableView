@@ -1,0 +1,14 @@
+<table>
+    
+    
+    <basic text="不同cell" didSeclect = "push" viewController="XMLTestViewController"/>
+    <line/>
+    
+    <basic text="下拉刷新" didSeclect = "push" viewController="PulldownRefreshTestViewController"/>
+    <line/>
+    
+    <basic text="删除" didSeclect="push" viewController="EditViewController">
+        <line/>
+        
+    
+</table>

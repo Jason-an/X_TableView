@@ -1,0 +1,27 @@
+<table>
+    
+    <image/>
+    
+    <basic  text = "A"/><line/>
+    <radio  groupid="1" text = "a" select = "true"/><line/>
+    <radio  groupid="1" text = "b" /><line/>
+    <radio  groupid="1" text = "c" /><line/>
+    
+    
+    <basic  text = "B"/><line/>
+    <radio  groupid="2" text = "a" select = "true"/><line/>
+    <radio  groupid="2" text = "b" /><line/>
+    <radio  groupid="2" text = "c" /><line/>
+    
+    <basic  text = "C"/><line/>
+    <switch text = "a" select = "true"/><line/>
+    <switch text = "b"/><line/>
+    <switch text = "c"/><line/>
+    
+    <basic  text = "D"/><line/>
+    <switch text = "a" select = "true"/><line/>
+    <switch text = "b"/><line/>
+    <switch text = "c"/><line/>
+    
+    
+</table>
